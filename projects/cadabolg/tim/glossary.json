@@ -1,0 +1,20 @@
+{
+  "Glossary": [
+    {"Term": "Abstract Data Type (ADT)",              "Definition": "Custom made structure with properties tailored to the needs of the program."},
+    {"Term": "Back-end",                              "Definition": "Describes the transparent infrastructure of the gaming mechanics and systems."},
+    {"Term": "Compatibility Assurance",               "Definition": "Assures that there is compatibility across any arbitrary platform, ie. Windows, Mac, Linux, Internet Explorer, Google Chrome, etc."},
+    {"Term": "Complexity of Development",             "Definition": "Describes the difficulty of producing a product. In our context, we commonly refer to the complexity of building a designer tool as a preliminary qualification test for development."},
+    {"Term": "Component",                             "Definition": "A component in the context of the Cadabolg system is the major category in which subcomponents are to be sorted into."},
+    {"Term": "Cost of Development",                   "Definition": "Refers to the projected resources expended required to complete a task. Generally, we refer to this term to describe the cost for building a designer tool as a preliminary qualification test for development."},
+    {"Term": "Configuration Prefix Standard (CPS)",   "Definition": "Pre-determined prefix standards indicating the types and classifications for configuration nodes in the game design process."},
+    {"Term": "Feasibility",                           "Definition": "A qualitative term to describe the complexity of development and cost of development for a certain product."},
+    {"Term": "File Information Header",               "Definition": "Located at the header of every source code file. Provides information of the file contents, author, ownership rights, and other administrative information."},
+    {"Term": "Front-end",                             "Definition": "Describes the UI-based aspects of development and applying the back end to a visible surface."},
+    {"Term": "Functional Integrity",                  "Definition": "Describes the quality of a program having strong and useful functionality."},
+    {"Term": "Level of Demand",                       "Definition": "The demand for a product based on popular vote to determine whether or not to create a product."},
+    {"Term": "PROLIX",                                "Definition": "The Cadabolg custom game engine. Handles media-based functionality and application maintenance."},
+    {"Term": "Subcomponent",                          "Definition": "A subcomponent in the context of the Cadabolg system belong to an appropriate component and categorizes function and structuredeclarations."},
+    {"Term": "Unified Modelling Lanauge (UML)",       "Definition": "Class structures using flow charts to indicate relationships between structures."},
+    {"Term": "User Interface (UI)",                   "Definition": "The UI is the visible play space for the player."}
+  ]
+}

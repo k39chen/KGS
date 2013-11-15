@@ -1,0 +1,428 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-4.0">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-6.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">5.0 Battle Mechanics</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#5.1">5.1 Interface</a></h2>
+<h2><a href="#5.2">5.2 Battle System</a></h2>
+<h2><a href="#5.3">5.3 Derived Attributes</a></h2>
+</div>
+
+<div id="content">
+<h1><a name="5.1">5.1 Interface</a></h1>
+<br/>
+<image src="files/batinterface.png">
+<br/>
+	<h2>5.1.1 Battler Window</h2>
+<img src = "files/smallmugally.png">
+<img src = "files/smallmugenemy.png">
+<p>
+The Battler Window provides information about a Battler when in battle. There are three forms of Battler Windows:
+<em>Compressed, Standard and Extended</em>.
+<br/>
+All windows have a Mugshot of the Battler. The Mugshot shows an animated gif with state changes. This shows their reaction to
+certain situations in battle (getting hurt, getting a crit etc.) and when the character incurs a <a name="#5.2.4">Status Effect</a>.
+
+</p>
+	<h2>5.1.2 Round Timer</h2>
+	<h2>5.1.3 Metasync Gauge</h2>
+<img src="files/metasync.png">
+<p>
+The Metasync Gauge is shared by the whole party.
+It fills up gradually over the course of the battle.
+Its progress can be sped up by the following:
+
+<ul type = "circle">
+	<li>High Party/Enemy C.C</li>
+	<li>High amt. DAM dealt by Enemy/Ally</li>
+	<li>Enemy/Ally KO</li>
+</ul>
+
+The MG has tiers: I, II, III, IV, V, MAX.
+This can be used to perform Sync Actions at different levels.
+</p>
+	<h2>5.1.4 Combo Counter</h2>
+<img src="files/combocount.png">
+<p>
+The C.C. is located to the left of the screen above the Player’s Metasync Gauge and to the right of the screen below the Enemy’s Overdrive Gauge. 
+The C.C. increments every uninterrupted hit to a single ally/enemy or group of allies/enemies. 
+The higher the C.C. value the greater the Metasync boost at the end of the combo. 
+In addition, getting criticals (crits) and exploiting elemental weaknesses (breaks) will add a bonus to the multiplier.
+</p>
+	<h2>5.1.5 Buff Reels</h2>
+<img src="files/buffreels.png">
+<p>
+Both parties have a set of three slot reels called Buff Reels. The slots grant (de)buffs upon their respective party.
+At the begining of every round, these reels are rolled to give three random (de)buffs to their party.
+The Player can choose to stop to the reels one by one (from left to right) with [SPACEBAR] or let them come to rest on their own.
+The light under the reels indicates whether they are spinning (red) and when they have come to rest (green).
+</p>
+<p>
+(De)buffs of the same kind can stack, hence they have a more potent effect on either party.
+Getting three of the same (de)buff or getting three of the same color give 2 Tiers Metasync boost.
+During the battle, these buffs can be replaced by certain Dynamic Skills.
+Here are some Metasync Actions that affect the Buff Reels:
+<br/>
+1 Tier  Metasync Gauge to roll their enemy's reels again.<br/>
+2 Tiers Metasync Gauge to roll the party's reels again.<br/>
+3 Tiers Metasync Gauge to break both party's reels making (de)buffs invalid for the rest of the round.<br/>
+</p>
+<br/>
+<h1><a name="5.2">5.2 Battle System</a></h1>
+<h2>5.2.1 Match Types</h2>
+<p>There are many types of matches. Many of which have different restrictions.<br/>
+Duel: 1-on-1. 30s rounds. Tag team disabled. Restock disabled. Only between Avatars.<br/>
+Deathmatch: 3-on-3. 60s rounds. Tag team enabled. Restock enabled.<br/>
+Brawl: All-on-All. 120s rounds. Tag team enabled. Restock enabled.<br/>
+Miniboss: 3-on-1. 60s rounds. Tag team disabled. Restock disabled.<br/>
+Boss: 3-on-1. 60s rounds. Tag team enabled. Restock disabled.<br/>
+Superboss: All-on-1. 30s rounds. Tag team enabled. Restock disabled.<br/>
+Standoff: 1-on-All. 300s rounds. Tag team disabled. Restock enabled.</p>
+<br/>
+<h2>5.2.2 Rounds</h2>
+<p>
+</p>
+<br/>
+<h2>5.2.3 Tag Team</h2>
+<p>
+In battle, it is possible switch between any of the three characters on your party. 
+Note the character you are playing is automatically the Party Leader. 
+If the character you are playing is KO'd, it switches to the next character in line.
+Depending on the type of match, you may be able to switch in/out party members with any available members of your crew between rounds.
+If a character is damaged or incurred a status effect, switching it out of the party will allow it recover some health and regain normal status for future rounds.
+</p>
+<h2>5.2.4 Status Effects</h2>
+<p>
+Status Effects are changes in a unit's condition that may hamper or enhance their performance in battle.
+A unit can have one Status Effect at a time. The Status Effect needs to either wear off or cured before
+a new one can be attained. The unit's current Status Effect is indicated on the unit's Mugshot window on
+the HUD. The unit carries over its Status Effect to the next round.
+</p>
+
+<table border="1">
+<tr>
+	<th>Icon</th>
+	<th>Name</th>
+	<th>Description</th>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Normal(NOR)</td>
+	<td>No effect on attributes or condition.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Toxin (TOX)</td>
+	<td>Unit loses X% HP every Y seconds.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Delirium (DEL)</td>
+	<td>Unit loses X% MP every Y seconds.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Rejuvenate (REJ)</td>
+	<td>Unit gains X% HP every Y seconds.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Energize (ENE)</td>
+	<td>Unit gains X% MP every Y seconds.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Speechless (SPC)</td>
+	<td>Unit is unable to use magic skills.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Fracture (FRA)</td>
+	<td>Unit is unable to use physical skills.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Immobilize (IBZ)</td>
+	<td>Unit is unable to move.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Bloodlust (BLS)</td>
+	<td>Control lost over unit. Attacks nearest target.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Neutralize (NEU)</td>
+	<td>Unit absorbs next magical skill.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Anticipate (ANT)</td>
+	<td>Unit avoids next physical skill.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Quickstep (QCK)</td>
+	<td>Unit moves faster.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Calm (CLM)</td>
+	<td>Metasync gauge goes slower. Unit less likely to get interrupted.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Panic (PNC)</td>
+	<td>Metasync gauge goes faster. Unit more likely to get interrupted.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/"></td>
+	<td>Knock Out (TKO)</td>
+	<td>Unit is unable to act until revived.</td>
+</tr>
+</table>
+<br/>
+<h2>5.2.5 (De)buffs</h2>
+<p>All (de)buffs are noted in the table below:</p>
+<table border="1">
+<tr>
+	<th>Icon</th>
+	<th>Name</th>
+	<th>Description</th>
+</tr>
+<tr>
+	<td><image src="files/icons/strup.png"></td>
+	<td>STR +</td>
+	<td>Party STR X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/strdown.png"></td>
+	<td>STR -</td>
+	<td>Party STR X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/defup.png"></td>
+	<td>DEF +</td>
+	<td>Party DEF X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/defdown.png"></td>
+	<td>DEF -</td>
+	<td>Party DEF X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/agiup.png"></td>
+	<td>AGI +</td>
+	<td>Party AGI X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/agidown.png"></td>
+	<td>AGI -</td>
+	<td>Party AGI X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/evaup.png"></td>
+	<td>EVA +</td>
+	<td>Party EVA X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/evadown.png"></td>
+	<td>EVA -</td>
+	<td>Party EVA X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/magup.png"></td>
+	<td>MAG +</td>
+	<td>Party MAG X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/magdown.png"></td>
+	<td>MAG -</td>
+	<td>Party MAG X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/resup.png"></td>
+	<td>RES +</td>
+	<td>Party RES X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/resdown.png"></td>
+	<td>RES -</td>
+	<td>Party RES X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/potup.png"></td>
+	<td>POT +</td>
+	<td>Party POT X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/potdown.png"></td>
+	<td>POT -</td>
+	<td>Party POT X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/immup.png"></td>
+	<td>IMM +</td>
+	<td>Party IMM X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/immdown.png"></td>
+	<td>IMM -</td>
+	<td>Party IMM X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/ltup.png"></td>
+	<td>LT +</td>
+	<td>LT DAM (to party) X 0.5.<br/>LT DAM (by party) X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/ltdown.png"></td>
+	<td>LT -</td>
+	<td>LT DAM (to party) X 1.5.<br/>LT DAM (by party) X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/arup.png"></td>
+	<td>AR +</td>
+	<td>AR DAM (to party) X 0.5.<br/>AR DAM (by party) X 1.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/ardown.png"></td>
+	<td>AR -</td>
+	<td>AR DAM (to party) X 1.5.<br/>AR DAM (by party) X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/wtup.png"></td>
+	<td>WT +</td>
+	<td>WT DAM (to party) X 0.5.<br/>WT DAM (by party) X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/wtdown.png"></td>
+	<td>WT -</td>
+	<td>WT DAM (to party) X 1.5.<br/>WT DAM (by party) X 0.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/wdup.png"></td>
+	<td>WD +</td>
+	<td>WD DAM (to party) X 0.5.<br/>WD DAM (by party) X 1.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/wddown.png"></td>
+	<td>WD -</td>
+	<td>WD DAM (to party) X 1.5.<br/>WD DAM (by party) X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/mtup.png"></td>
+	<td>MT +</td>
+	<td>MT DAM (to party) X 0.5.<br/>MT DAM (by party) X 1.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/mtdown.png"></td>
+	<td>MT -</td>
+	<td>MT DAM (to party) X 1.5.<br/>MT DAM (by party) X 0.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/frup.png"></td>
+	<td>FR +</td>
+	<td>FR DAM (to party) X 0.5.<br/>FR DAM (by party) X 1.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/frdown.png"></td>
+	<td>FR -</td>
+	<td>FR DAM (to party) X 1.5.<br/>FR DAM (by party) X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/elup.png"></td>
+	<td>EL +</td>
+	<td>EL DAM (to party) X 0.5.<br/>EL DAM (by party) X 1.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/eldown.png"></td>
+	<td>EL -</td>
+	<td>EL DAM (to party) X 1.5.<br/>EL DAM (by party) X 0.5</td>
+</tr>
+<tr>
+	<td><image src="files/icons/dkup.png"></td>
+	<td>DK +</td>
+	<td>DK DAM (to party) X 0.5.<br/>DK DAM (by party) X 1.5.</td>
+</tr>
+<tr>
+	<td><image src="files/icons/dkdown.png"></td>
+	<td>DK -</td>
+	<td>DK DAM (to party) X 1.5.<br/>DK DAM (by party) X 0.5.</td>
+</tr>
+</table>
+
+<p>
+Buff Reels is a mechanic to give an added element of strategy to battles in order to get the best
+performance, but aren't crucial to one's success in the game.
+</p>
+<br/>
+<h2>5.2.6 Terrain Effects</h2>
+<p>
+</p>
+<br/>
+<h2>5.2.7 Reward System</h2>
+<p>
+Before a battle, both sides can wager up to three items. If you win, you will
+get the items the opposing team has wagered and one bonus item. If you lose, you
+will lose those items and any ecrys fused to them forever. The higher the total
+rank of your items in comparison to those of your opponents', the greater your
+odds of getting a better bonus item.
+</p>
+<p>
+For example,<br/>
+You wager: 1 Rank E, 1 Rank D, 1 Rank C<br/>
+They wager: 1 Rank F, 1 Rank E, 1 Rank D<br/>
+Rank difference: +1
+</p>
+<p>
+Hence, you have a chance at gwtting a bnus item of Rank B. Note the type of
+item recieved uis random. Also note that Customized items are half a rank higher
+than non-Customized items.
+</p>
+<p> Ecrys rewards depend on battle performance. Factors include: </p>
+<ul type = "circle">
+	<li>Highest Combo Count (+)</li>
+	<li># of Breaks/Crits (+)</li>
+	<li>Amt. of DAM dealt (+)</li>
+	<li>Time taken to finish battle (-)</li>
+	<li># of Junctions executed (-)</li>
+	<li># of KO'd allies (-)</li>
+</ul>
+<br/>
+<h1><a name="5.3">5.3 Derived Attributes</a></h1>
+	<h2>5.3.1 Damage (DAM)</h2>
+	<h2>5.3.2 Tolerance (TOL)</h2>
+</div>
+
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

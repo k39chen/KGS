@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-3.0.html">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-5.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">4.0 Skills</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#4.1">4.1 Description</a></h2>
+<h2><a href="#4.2">4.2 Nature</a></h2>
+<h2><a href="#4.3">4.3 Types</a></h2>
+</div>
+
+<div id="content">
+<h1><a name="4.1">4.1 Description</a></h1>
+<p>
+Skills are the abilities an Actor can employ in battle. Skills are stronger than regular weapon attacks, but have certain conditions that need to be met in order to use them.
+</p>
+<h1><a name="4.2">4.2 Nature</a></h1>
+<p>
+Skills are of two different natures: Physical and Magic.
+</p>
+	<h2>4.2.1 Physical</h2>
+<p>
+<em>Physical Skills</em> draw from the attributes of ATK and DEF. Using a Physical Skill consumes a set amount of MP. Physical Skills can be used instantaneously, but require a short
+cooldown period before they can be used again. Physical Skills are geared towards gaining a high CC as they can be easily chained together. Physical Skills can be blocked or avoided,
+thus ending the CC.
+</p>
+	<h2>4.2.2 Magic</h2>
+<p>
+<em>Magic Skills</em> draw from the attributes of MAG and RES. Using a Magic Skill consumes a proportionate amount of MP depending on how long you charge the spell. A spell typically has
+three stages: Weak, Regular, Strong. Using the same skill on weak mode is very different from using it on strong mode. Magic Skills are geared towards exploiting elemental weakness which
+slows down the enemy’s Overdrive gauge. Magic Skills can’t be blocked or avoided, but can be absorbed based on the enemy’s elemental affinity.
+</p>
+
+<h1><a name="4.3">4.3 Types</a></h1>
+<p>
+Skills are further divided into the following categories: Dynamic, Passive, Auto and Junction.
+</p>
+	<h2>4.3.1 Dynamic Skills</h2>
+<p>
+<em>Dynamic Skills</em> are abilities used by Actors in battle (e.g “Tsubame Gaeshi” lets the Actor perform three consecutive slashes upon an Enemy). Up to four Dynamic Skills can be mapped to a set of
+buttons of an Actor for any given battle. These skill-button mappings can be changed only in the Actor’s Status Screen between battles.
+</p>
+	<h2>4.3.2 Passive Skills</h2>
+<p>
+<em>Passive Skills</em> are abilities that enhance an Actor’s attributes, resistances, immunities or performance (e.g. “Anti-Venom” improves Actor’s chances of not getting poisoned by 20%). Up to three 
+Passive Skills can be assigned to an Actor for any given battle. These skills can be changed only in the Actor’s Status Screen between battles.
+</p>
+	<h2>4.3.3 Auto Skills</h2>
+<p>
+Auto Skills are abilities that will automatically kick-in under certain conditions (e.g. “Riestrad” causes an Actor to obtain the “Bloodlust” Status Effect once 50% HP is depleted). Up to three Auto Skills
+can be assigned to an Actor for any given battle. These skills can be changed only in the Actor’s Status Screen between battles.
+</p>
+	<h2>4.3.4 Junction Skills</h2>
+<p>
+Junction Skills are special abilities that are used by the entire party on a specified target or targets. Junction Skills cost no MP, but can only be used when the Overdrive gauge has reached the required tier.
+Once used, the Overdrive Gauge will drop by the number of tiers consumed. The Junction Skill performed depends on the people in the Party.
+</p>
+</div>
+
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

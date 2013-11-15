@@ -1,0 +1,358 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-2.0.html">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-4.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">3.0 Actors</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#3.1">3.1 Description</a></h2>
+<h2><a href="#3.2">3.2 Humans</a></h2>
+<h2><a href="#3.3">3.3 Monsters</a></h2>
+<h2><a href="#3.4">3.4 Golems</a></h2>
+<h2><a href="#3.5">3.5 Hero/Heroine</a></h2>
+<h2><a href="#3.6">3.6 Crew</a></h2>
+<h2><a href="#3.7">3.7 Enemies</a></h2>
+</div>
+
+<div id="content">
+<h1><a name="3.1">3.1 Definition</a></h1>
+<p>
+A <b>Battler</b> refers to a generic entity that fights in battles. This includes the Player,
+all members of his/her <a href="#3.6">Party</a> and their <a href="#3.7">Enemies</a>.
+The behavoir and capabilities of each Actor are determined by the factors described below.
+</p>
+<h2>3.1.1 Personal Details</h2>
+<p>
+Personal Details are factors that are considered "intagible". They are presented in the form of 
+strings on the front-end, but these correspond to some back-end values that affect each Battler's
+Attributes. Only a few of these can be changed under special circumstances.
+</p>
+	<h3>3.1.1.1 Name</h3>
+<p>
+The name of the Battler. The Player can choose to enter the name when making the Battler or allow a randomly generated name (six character limit).
+</p>
+	<h3>3.1.1.2 Race</h3>
+<img src="files/icons/human.png">
+<img src="files/icons/monster.png">
+<img src="files/icons/golem.png">
+<p>
+The race of the Battler. Battler can be Human/Monster/Golem/Hero(ine).
+</p>
+	<h3>3.1.1.3 Gender</h3>
+<img src="files/icons/male.png">
+<img src="files/icons/female.png">
+<img src="files/icons/unknown.png">
+<p>
+Gender refers to whether the Battler is Male,Female or Unknown.
+Gender affects their initial attributes, access to gender-specific equipment and spriteset.
+Certain enemies target one gender over the other making this an important factor to consider in some battles.
+Golems and Abyssals are automatically of Unknown gender.
+</p>
+	<h3>3.1.1.4 Elemental Affinity</h3>
+<p>
+The Elemental Affinity of the Battler. This is based on the individual elemental resistances of the
+Actor. The element that the Battler has the highest resistance to is usually one's elemental affinity,
+but there are exceptions to this rule (See <a href= "gdd-6.0.html#6.3">Elemental Affinity</a> for details).
+</p>
+	<h3>3.1.1.3 Class</h3>
+<p>
+The class of the Battler. This determines the attribute growth on level up, the equipment that can
+be worn, the skills they learn and their general role in battle. 
+For Humans, this is known as their Archetype.
+For Monsters, this is known as their Genus.
+For Golems, this is known as their Model.
+</p>
+	<h3>3.1.1.4 Sub-Class</h3>
+<p>
+The Sub-class of the Battler. Can be accquired after level 25. The unit can now access some skills
+of the Sub-Class and can wear the equipment of the Sub-Class. In some cases, their attribute
+increases on level up also change.
+For Humans, this is known as their Sub-Archetype.
+For Monsters, this is known as their Sub-Genus.
+For Golems, this is not applicable.
+</p>
+<h2>3.1.2 Attributes</h2>
+<p>Attributes are numerical factors that come into play predominantly during battle.</p>
+	<h3>3.1.2.1 Level (LVL)</h3>
+<p>
+</p>
+	<h3>3.1.2.2 Experience (EXP)</h3>
+<p>
+</p>
+	<h3>3.1.2.3 Strength (STR)</h3>
+<p>
+Measure of Actor's ability to deal Physical damage.
+</p>
+	<h3>3.1.2.4 Defense (DEF)</h3>
+<p>
+Measure of Actor's ability to resist Physical damage.
+</p>
+	<h3>3.1.2.5 Accuracy (ACC)</h3>
+<p>
+Measure of Actor's ability to land Physical attacks.
+</p>
+	<h3>3.1.2.6 Evasion (EVA)</h3>
+<p>
+Measure of Actor's ability to dodge Physical attacks.
+</p>
+	<h3>3.1.2.7 Intelligence (ITL)</h3>
+<p>
+Measure of Actor's ability to deal Magical damage.
+</p>
+	<h3>3.1.2.8 Willpower (WIL)</h3>
+<p>
+Measure of Actor's ability to deal Magical attacks.
+</p>
+	<h3>3.1.2.9 Cognition (COG)</h3>
+<p>
+Measure of Actor's ability to execute Magical attacks.
+</p>
+	<h3>3.1.2.10 Ego (EGO)</h3>
+<p>
+Measure of Actor's ability to nullify Magical attacks.
+</p>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.2">3.2 Humans</a></h1>
+<p>
+Humans will make up the majority of The Cast. Humans have the most balanced attributes amongst all Actors.
+Human grow by gaining levels (LVL) which is done by accumulating a specified amount of experience points (EXP)
+from battles. Humans are also able to draw out the inherent “memories” of objects and so are able to acquire skills
+from the equipment they wear. In addition, a Human’s elemental affinity and resistances are determined by the equipment
+they wear.
+</p>
+
+<h2>3.2.1 Archetype</h2>
+<p>
+Archetype refers to an Actor's preferred role in a battle. A Human’s Archetype affects their attribute growth upon level up
+and what equipment they can wear, hence what skills they are able to learn. There are five Archetypes: Tank, Rogue, Mule, 
+Caster, and Healer.
+</p>
+	<h3>3.2.1.1 Tank</h3>
+<p>
+Tanks are hard-hitting, but slow physical attackers who can defend their allies.
+Tanks have high HP/ATK/DEF, but low MP/SPD/MAG. Tanks can wield Spear-type weapons
+(Javelin, Pike, Lance, Polearm) and wear Full-Helms, Plate Armor, and Great Shields.
+</p>
+	<h3>3.2.1.2 Rogue</h3>
+<p>
+Rogues are nimble fighters who can easily avoid enemy attacks and draw enemy aggro.
+Rogues have high ATK/SPD/POT, but low HP/DEF/IMM. Rogues can wield Sword-type weapons
+(Blade, Sabre, Rapier, Greatsword) and wear Caps, Lamellar Armor, and Bucklers.
+</p>
+	<h3>3.2.1.3 Mule</h3>
+<p>Hat
+Mules can use items with greater proficiency and have greater inventory space.
+Mules have high HP/DEF/IMM,but low MP/ATK/MAG. Mules can wield Axe-type weapons 
+(Handaxe, Hammer, Scythe, Greataxe) and wear Half-Helms, Fiber Armor and Gauntlets.
+</p>
+	<h3>3.2.1.4 Caster</h3>
+<p>
+Casters use offensive magic to damage and debilitate their enemies.
+Caster have high MP/SPD/MAG, but low HP/ATK/DEF. Casters can wield Staff-type weapons
+(Club, Rod, Wand, Mace) and wear Hoods, Mail Armor and Gloves.
+</p>
+	<h3>3.2.1.5 Healer</h3>
+<p>
+Healers use defensive magic to heal party members and bolster their abilities.
+Healers have high MP/MAG, but low SPD/POT. Healers can wield Other-type weapons
+(Knife,Bows,Flails,Knuckles) and wear Hats, Cloth Armor and Round Shields.
+</p>
+
+<h2>3.2.2 Persona (Sub-Class)</h2>
+<p>
+Once a Human reaches level 25, they will be able to take on a Persona by means of taking another Archetype to a smaller degree.
+This will enable them to use a greater scope of equipment (hence learn new skills) and change their attribute growth upon leveling.
+Their aesthetic look will also change slightly to match their specialization.
+</p>
+
+<h2>3.2.3 Assimilation (Learning Skills)</h2>
+<p>
+When a Human equips an item, they are able to use its inherent skills. However, if this item is unequipped, then the Actor is no longer able to use this skill.
+To make the skills usable no matter what is equipped, the Actor must accumulate a specified amount of EXP while the item is equipped 
+(e.g. the skill “Heavenly Indignation” is learned from Excalibur if 200000 EXP is accumulated while it is equipped). If by any chance the equipment is unequipped
+during the learning, the amount of EXP earned thus far is noted in the Actor’s memory.
+</p>
+
+<h2>3.2.4 Transmigration (Re-Spec Method)</h2>
+<p>
+Once an Actor reaches level 50, they will have the choice of “Transmigration”, which resets the character back to level 1 and allows them to choose their 
+Main Archetype (and eventually Sub Archetype) once again. All Skills stored in their memory (MEM) are retained, but attributes at the time of “Transmigration” will be halved.
+Additionally, the Actor can change his/her name, appearance, and gender.
+</p>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.3">3.3 Monsters</a></h1>
+<p>
+Monsters will make some unique additions to The Cast. Monsters have the greatest raw attributes and growth compared to Humans and Golems. Monsters also grow by gaining levels (LVL)
+which is done by accumulating a specified amount of experience points (EXP). However, they are unable to wear equipment and grow at a much slower rate (more EXP required per level
+up than other Actors). Monsters learn skills through genetic memories inherent to their respective genus.
+</p>
+<h2>3.3.1 Genus</h2>
+<p>
+Monsters are distinguished by their Species and Genus. Species refers to the type of Monster they are (e.g. Kobold, Troll, Cthulu etc.) which determines their initial attributes and
+initial elemental affinity and resistances (if any). Genus refers to the group of Monsters they belong to. Their Genus affects their attribute growth and the genetic skill tree they
+can access. There are nine Archetypes: Humanoid, Beast, Elemental, Dragon, Fiend, Fey, Specter, Nature and Abyssal.
+</p>
+	<h3>3.3.1.1 Humanoid</h3>
+<p>
+Humanoid monsters have human-like features, able to use tools and work in small groups to achieve common goals (balanced ALL). 
+</p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="gdd-9.0.html#han0">Goblin</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="gdd-9.0.html#hlt1">Werecub</a></td>
+		<td><a href="#har1">Harpy</a></td>
+		<td><a href="#hwt1">Sagahin</a></td>
+		<td><a href="#hwd1">Faun</a></td>
+		<td><a href="#hno1">Orc</a></td>
+		<td><a href="#her1">Bugbear</a></td>
+		<td><a href="#hfr1">Lizardman</a></td>
+		<td><a href="#hel1">Sphinx</a></td>
+		<td><a href="#hdk1">Minotaur</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#hlt2">Werejackal</a></td>
+		<td><a href="#har2">Alkonost</a></td>
+		<td><a href="#hwt2">Merman</a></td>
+		<td><a href="#hwd2">Satyr</a></td>
+		<td><a href="#hno2">Ogre</a></td>
+		<td><a href="#her2">Giant</a></td>
+		<td><a href="#hfr2">Saurian</a></td>
+		<td><a href="#hel2">Manticore</a></td>
+		<td><a href="#hdk2">Sarangay</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#hlt3">Werewolf</a></td>
+		<td><a href="#har3">Erinyes</a></td>
+		<td><a href="#hwt3">Umibozu</a></td>
+		<td><a href="#hwd3">Centaur</a></td>
+		<td><a href="#hno3">Troll</a></td>
+		<td><a href="#her3">Cyclops</a></td>
+		<td><a href="#hfr3">Naga</a></td>
+		<td><a href="#hel3">Shedu</a></td>
+		<td><a href="#hdk3">Gyuki</a></td>
+	</tr>
+</table>
+<br/>
+	<h3>3.3.1.2 Beast</h3>
+<p>
+Beast monsters are mutations of existing fauna that have terrifying agility and ferocity.
+Beast monsters have high SPD/ATK, but low DEF/MAG.
+</p>
+	<h3>3.3.1.3 Elemental</h3>
+<p>
+Elemental monsters are ‘physical’ manifestations of forces of nature and use their mastery of the elements destroy foes.
+Elementals have high MAG/POT, but low HP/ATK. 
+</p>
+	<h3>3.3.1.4 Dragon</h3>
+<p>
+Dragons are serpentine creatures of legendary strength and resilience that typically hunt alone (high ATK/DEF, low MP/SPD).
+</p>
+	<h3>3.3.1.5 Fiend</h3>
+<p>
+Fiends are highly intelligent demonic beings from the otherworld that use arcane spells and curses on their foes (high MAG/POT, low RES/IMM).
+</p>
+	<h3>3.3.1.6 Fey</h3>
+<p>
+Fey monsters are magical beings that walk between the real and the imaginary and have a habit of swarming to overwhelm their opponents (high SPD/MAG, low MP/ATK).
+</p>
+	<h3>3.3.1.7 Spectre</h3>
+<p>
+Specters are ethereal beings who were unable to go on to the afterlife and most difficult to “kill” (high RES/IMM, low MP/POT). 
+</p>
+	<h3>3.3.1.8 Nature</h3>
+<p>
+Nature monsters are sentient plant life that refuse to be uprooted (high DEF/IMM, low ATK/SPD/POT). 
+</p>
+	<h3>3.3.1.9 Abyssal</h3>
+<p>
+Abyssal monsters are from another dimension and feared by all (high ALL).
+</p>
+<h2>3.3.2 Evolution (Sub-Class)</h2>
+<p>
+Once a Monster reaches level 25, they can evolve to take on a Sub Genus (that is not their Main Genus).
+This will enable them to access the Sub Genus’ genetic memories and change their attribute growth upon level up.
+Additionally, the Monster changes to a new Species thus changing its appearance.
+</p>
+<h2>3.3.3 Genetic Memories (Learning Skills)</h2>
+<h2>3.3.4 Breeding (Re-Spec Method)</h2>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.4">3.4 Golems</a></h1>
+<p>
+Golems are mechanical creations that have been given the breath of life through advances in Ecrys research.
+</p>
+<h2>3.4.1 Model</h2>
+	<h3>3.4.1.1 Homunculus</h3>
+	<h3>3.4.1.2 Marionette</h3>
+	<h3>3.4.1.3 Frankenstein</h3>
+	<h3>3.4.1.4 Mandrake</h3>
+	<h3>3.4.1.5 Colossus</h3>
+	<h3>3.4.1.6 Doppelganger</h3>
+	<h3>3.4.1.7 Voodoo Doll</h3>
+	<h3>3.4.1.8 Clockworker</h3>
+	<h3>3.4.1.9 Machina ex Deus</h3>
+<h2>3.4.2 Customization</h2>
+<h2>3.4.3 Heuristics</h2>
+<h2>3.4.4 Core Transfer</h2>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.5">3.5 Hero/Heroine</a></h1>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.6">3.6 Cast</a></h1>
+<p><a href="#top">[top]</a></p>
+
+<h1><a name="3.7">3.7 Enemies</a></h1>
+<p><a href="#top">[top]</a></p>
+
+</div>
+
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

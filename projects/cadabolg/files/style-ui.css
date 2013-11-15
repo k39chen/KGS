@@ -1,0 +1,498 @@
+/**********************************************
+ * MAIN LAYOUT
+ *********************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  background: url(bg.jpg);
+  width: 1200px;
+  margin: 10px auto;
+}
+#header {
+  height: 90px;
+  border-bottom-width: 3px;
+  border-bottom-color: rgb(100,100,100);
+  -moz-border-bottom-colors: rgb(10,10,10) rgb(100,100,100);
+  border-bottom-style: ridge;
+}
+#container {
+  height: 98%;
+}
+#content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 85%;
+}
+#title {
+  float: right;
+  margin: 0;
+  margin-top: 20px;
+  font-family: Special Elite;
+  color: rgb(240,240,240);
+  text-shadow: 2px 2px 4px rgb(20,20,20);
+}
+#footer {
+  font-family: Ubuntu;
+  font-size: 11px;
+  color: white;
+  text-align: right;
+  
+  border-top-width: 3px;
+  border-top-color: rgb(100,100,100);
+  -moz-border-top-colors: rgb(10,10,10) rgb(100,100,100);
+  border-top-style: ridge;
+}
+
+/**********************************************
+ * BANNER
+ *********************************************/
+#banner {
+  float: left;
+  width: 37%;
+  color: rgb(200,200,200);
+  text-align: left;
+}
+
+#banner:hover {
+  cursor: pointer;
+}
+
+#banner h1 {
+  color: white;
+  font-family: IM Fell English SC;
+  font-size: 50px;
+  margin: 0;
+  font-weight: normal;
+  text-shadow: 4px 4px 6px rgb(40,40,40);
+}
+
+#banner h2 {
+  font-family: Tangerine;
+  font-size: 30px;
+  margin-top: -10px;
+  color: rgb(220,220,220);
+  text-shadow: 4px 4px 6px rgb(40,40,40);
+}
+
+/**********************************************
+ * NAVBAR
+ *********************************************/
+#navbar {
+  height: 30px;
+  width: 63%;
+  float: right;
+  text-align: right;
+}
+
+#navbar ul {
+  margin-top: 4px;
+}
+
+#navbar li {
+  display: inline;
+  
+  -moz-box-shadow: 2px 2px 3px rgb(10,10,10);
+  -webkit-box-shadow: 2px 2px 3px rgb(10,10,10);
+  box-shadow: 2px 2px 3px rgb(10,10,10);
+  
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  
+  border-style: solid;
+  border-color: rgb(50,50,50);
+  border-width: 1px;
+  
+  background: gray;
+  background: -moz-linear-gradient(top, rgb(150,150,150), rgb(70,70,70));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(150,150,150)), to(rgb(70,70,70)));
+}
+
+#navbar a:visited,
+#navbar a:hover,
+#navbar a:link {
+  text-decoration: none;
+  font-family: "Special Elite";
+  font-size: 18px;
+  color: rgb(200,200,200);
+  text-shadow: 1px 1px 2px rgb(30,30,30);
+  
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+#navbar a:hover {
+  text-shadow: -1px -1px 2px rgb(30,30,30);
+  cursor: pointer; 
+}
+
+#navbar li:hover {
+  -moz-box-shadow: -2px -2px 3px rgb(10,10,10);
+  -webkit-box-shadow: -2px -2px 3px rgb(10,10,10);
+  box-shadow: -2px -2px 3px rgb(10,10,10);
+}
+
+/**********************************************
+ * MULTI-OPEN ACCORDION
+ *********************************************/
+#multiOpenAccordion {
+  margin-bottom: 50px;
+}
+
+#multiOpenAccordion h1,
+#multiOpenAccordion h1:hover {
+  font-family: Ubuntu;
+  font-size: 15px;
+  
+  border-style: none;
+  background: rgb(30,30,30);
+  background: -moz-linear-gradient(top,  rgb(50,50,50), rgb(20,20,20));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(100,100,100)), to(rgb(70,70,70)));
+}
+
+#multiOpenAccordion h1:hover {
+  background: rgb(100,100,100);
+  background: -moz-linear-gradient(top,  rgb(100,100,100), rgb(30,30,30));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(150,150,150)), to(rgb(80,80,80)));
+}
+
+#multiOpenAccordion div {
+  font-family: Cambria;
+  font-size: 15px;
+  color: black;
+  
+  opacity: 0.9;
+
+  padding-top: 0px;
+  
+  border-style: none;
+  background: rgb(230,230,230);
+  background: -moz-linear-gradient(top,  rgb(250,250,250), rgb(220,220,220));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(250,250,250)), to(rgb(220,220,220)));
+}
+
+#multiOpenAccordion div div {
+  background: transparent;
+}
+
+#multiOpenAccordion h2,
+#multiOpenAccordion h3,
+#multiOpenAccordion h4,
+#multiOpenAccordion h5,
+#multiOpenAccordion h6 {
+  margin:0;
+  margin-top: 10px;
+}
+
+#multiOpenAccordion h2 {font-size: 20px;}
+#multiOpenAccordion h3 {font-size: 18px;}
+#multiOpenAccordion h4 {font-size: 16px;}
+#multiOpenAccordion h5 {font-size: 16px;}
+#multiOpenAccordion h6 {font-size: 16px;}
+
+#multiOpenAccordion p {
+  margin-bottom: 10px; 
+}
+
+#multiOpenAccordion ul,
+#multiOpenAccordion ol {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+#multiOpenAccordion img {
+  margin: 20px;
+  margin-left: 0px;
+}
+
+#multiOpenAccordion th,
+#multiOpenAccordion td {
+  border-width: 1;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/**********************************************
+ * GLASSPANE
+ *********************************************/
+#glasspane {
+  position: relative;
+  margin: 0;
+  opacity: 0.6;
+  
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  
+  -moz-box-shadow: 2px 3px 10px rgb(20,20,20);
+  -webkit-box-shadow: 2px 3px 10px rgb(20,20,20);
+  box-shadow: 2px 3px 10px rgb(20,20,20); 
+  
+  background: rgb(200,200,200);
+  background: -moz-linear-gradient(top, rgb(220,220,220), rgb(200,200,200));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(200,200,200)));
+}
+#glasspane-content {
+  position: relative;
+  height: 0px;
+  left: 25px;
+}
+#glasspane-content h1 {
+  margin: 0;
+  font-family: Smythe;
+  font-size: 50px;
+  font-weight: normal;
+  -webkit-box-reflect: below -20px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), color-stop(.7, transparent), to(rgb(120,120,120)));
+}
+#glasspane-content p {
+  font-family: Smythe;
+  font-size: 30px;
+}
+
+.darkpane {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border-radius: 15px;
+  
+  background: rgb(30,30,30);
+  background: -moz-linear-gradient(top,  rgb(50,50,50), rgb(20,20,20));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgb(0,0,0)), to(transparent)); 
+}
+
+/**********************************************
+ * Table of Contents
+ *********************************************/
+#toc {
+  width: 30%;
+  height: 100%;
+  
+  float:left;
+  
+  opacity: 0.9;
+  overflow: visible;
+  
+  background: white;
+  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  background: rgb(200,200,200);
+  background: -moz-linear-gradient(top, rgb(240,240,240), rgb(200,200,200));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(200,200,200)));
+}
+
+#toc h1 {
+  margin: 0;
+  padding-left: 10px;
+  
+  font-family: Tangerine;
+  font-size: 35px;
+  font-weight: normal;
+  
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  background: rgb(200,200,200);
+  background: -moz-linear-gradient(top, rgb(240,240,240), rgb(200,200,200));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(200,200,200)));
+}
+
+ol.toc-root {
+  margin: 0px;
+  height: 90%;
+  padding-top: 10px;
+  padding-left: 10px; 
+  padding-right: 10px;
+  position: relative;
+  left: -20px;
+  overflow:auto;
+  width:94%;
+}
+
+#toc ol {
+  margin-left: 20px;
+  font-family: Forum;
+  font-size: 18px;
+  list-style: none;
+}
+
+#toc button {
+  font-family: Courier New;
+  width: 20px;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+#toc a {
+  text-decoration: none;
+  color: black;
+}
+
+#toc a:hover {
+  color: white;
+}
+
+.toc-child {
+  display: none;
+}
+
+#toc li:hover {
+  background: rgb(150,150,150);
+  cursor: pointer;
+  color: white;
+}
+
+/**********************************************
+ * TOC Module Styling
+ *********************************************/
+.module {
+  display: none;
+  width: 69%;
+  height: 100%;
+  float:right;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  background: rgb(230,230,230);
+  background: -moz-linear-gradient(top,  rgb(250,250,250), rgb(220,220,220));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(250,250,250)), to(rgb(220,220,220)));
+}
+
+.module h1 {
+  margin: 0;
+  padding-left: 10px;
+  
+  text-align: center;
+  
+  font-family: Tangerine;
+  font-size: 35px;
+  font-weight: normal;
+  
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px
+  
+  background: rgb(200,200,200);
+  background: -moz-linear-gradient(top, rgb(240,240,240), rgb(200,200,200));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(200,200,200)));
+}
+
+.section {
+  height: 90%;
+
+  font-family: Cambria;
+  font-size: 15px;
+  color: black;
+  
+  opacity: 0.9;
+  
+  overflow: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;  
+}
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6 {margin:0;margin-top: 10px;margin-bottom:5px;}
+.section h2 {font-size: 20px;}
+.section h3 {font-size: 18px;}
+.section h4 {font-size: 16px;}
+.section h5 {font-size: 16px;}
+.section h6 {font-size: 16px;}
+.section p {margin-bottom: 10px;padding-left:10px;}
+.section ul,
+.section ol {list-style-position: inside;margin-bottom:10px;margin-left: 10px;}
+.section img {margin: 20px;margin-left: 0px;}
+.section th,
+.section td {
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/**********************************************
+ * Fade in
+ *********************************************/
+.fadein {
+  margin: 0;
+  line-height: 0px;
+  color: transparent;
+  font-size: 30px;
+  font-family: Smythe;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.fadein:hover {
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.fadein img{
+  float: left;
+  margin: 0 15px;
+}
+
+/**********************************************
+ * Glow and Reflect
+ *********************************************/
+img.glow-and-reflect {
+  opacity: 0.8;
+  border: 10px solid #eee;
+  
+  /*Transition*/
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  
+  /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+}
+
+img.glow-and-reflect:hover {  
+   opacity: 1;
+   
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+/**********************************************
+ * Miscellaneous
+ *********************************************/
+.center-elems td,
+.center-elems th {
+  text-align: center;
+}
+
+.filepath {
+  color: rgb(0,100,0);
+  font-family: Courier New;
+  font-size: 12px;
+}

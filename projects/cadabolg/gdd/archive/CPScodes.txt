@@ -1,0 +1,40 @@
+IWA   Blade
+IWB   Sabre
+IWC   Rapier
+IWD   G. Sword
+IWE   Handaxe
+IWF   Hammer
+IWG   Scythe
+IWH   G. Axe
+IWI   Javelin
+IWJ   Pike
+IWK   Lance
+IWL   Polearm
+IWM   Club
+IWN   Rod
+IWO   Wand
+IWP   Mace
+IWQ   Knife
+IWR   Flail
+IWS   Bow
+IWT   Knucks
+
+ICA   Full-Helm
+ICB   Half-Helm
+ICC   Hat
+ICD   Hood
+ICE   Cap
+ICF   Plate
+ICG   Mail
+ICH   Lamellar
+ICI   Hard Cloth
+ICJ   Soft Cloth
+ICK   Great Shield
+ICL   Mid Shield
+ICM   Buckler
+ICN   Gauntlet
+ICO   Gloves
+
+IAA   Footwear
+IAB   Jewellery
+IAC   Adornment

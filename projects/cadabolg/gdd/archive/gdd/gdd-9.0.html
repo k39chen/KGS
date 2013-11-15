@@ -1,0 +1,4403 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-7.0.html">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-8.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">9.0 Bestiary</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#9.1">9.1 Humanoid</a></h2>
+<h2><a href="#9.2">9.2 Beast</a></h2>
+<h2><a href="#9.3">9.3 Elemental</a></h2>
+<h2><a href="#9.4">9.4 Dragon</a></h2>
+<h2><a href="#9.5">9.5 Fiend</a></h2>
+<h2><a href="#9.6">9.6 Fey</a></h2>
+<h2><a href="#9.7">9.7 Spectre</a></h2>
+<h2><a href="#9.8">9.8 Nature</a></h2>
+<h2><a href="#9.9">9.9 Abyssal</a></h2>
+</div>
+
+<br/>
+
+<div id="content">
+<h1><a name="9.1">9.1 Humanoid</a></h1>
+<p>
+Semi-intelligent monsters that resemble humans. They have balanced attributes 
+and some even use tools of their own making.
+</p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#han0">Goblin</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#hlt1">Werecub</a></td>
+		<td><a href="#har1">Harpy</a></td>
+		<td><a href="#hwt1">Sagahin</a></td>
+		<td><a href="#hwd1">Faun</a></td>
+		<td><a href="#hno1">Orc</a></td>
+		<td><a href="#her1">Bugbear</a></td>
+		<td><a href="#hfr1">Lizardman</a></td>
+		<td><a href="#hel1">Sphinx</a></td>
+		<td><a href="#hdk1">Minotaur</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#hlt2">Werejackal</a></td>
+		<td><a href="#har2">Alkonost</a></td>
+		<td><a href="#hwt2">Merman</a></td>
+		<td><a href="#hwd2">Satyr</a></td>
+		<td><a href="#hno2">Ogre</a></td>
+		<td><a href="#her2">Giant</a></td>
+		<td><a href="#hfr2">Saurian</a></td>
+		<td><a href="#hel2">Manticore</a></td>
+		<td><a href="#hdk2">Sarangay</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#hlt3">Werewolf</a></td>
+		<td><a href="#har3">Erinyes</a></td>
+		<td><a href="#hwt3">Umibozu</a></td>
+		<td><a href="#hwd3">Centaur</a></td>
+		<td><a href="#hno3">Troll</a></td>
+		<td><a href="#her3">Cyclops</a></td>
+		<td><a href="#hfr3">Naga</a></td>
+		<td><a href="#hel3">Shedu</a></td>
+		<td><a href="#hdk3">Gyuki</a></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="han0">Goblin</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Any</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Mischevious creature that is commonly found in forests waiting for humans to ambush.
+		They are usually only a few feet tall and wear animal skins.
+		Evolves to Werecub, Harpy, Sagahin, Faun, Orc, Bugbear, Lizardman, Sphinx, Minotaur.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hlt1">Werecub</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Light</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Lupine humanoid that lives in the mountains. Prey on smaller animals.
+		They band together and hunt in packs when trying to take down larger prey.
+		Evolves from Goblin. Evolves to Werejackal.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td>Rabid Fang</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="har1">Harpy</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Air</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Avian humanoid creatures that live on cliffs beside the sea.
+		Swoops down on unsuspecting travellers and snatch their belongings.
+		Evolves from Goblin. Evolves to Alkanost.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwt1">Sahuagin</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Water</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Amphibian humanoid creature that is commonly found in reefs.
+		They are quadruped and have webbed feet and claws that they use to scale ships.
+		Evolves from Goblin. Evolves to Merman.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwd1">Faun</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Wood</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Goat-like humanoid creature that is found in forests having parties.
+		They are usually peaceful, but go ballistic if their parties are interrupted.
+		Evolves from Goblin. Evolves to Satyr.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hno1">Orc</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>None</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Porcine humanoid creature that is commonly found in the desert.
+		They have sharp tusks and the desert heat makes them stink profousely.
+		Evolves from Goblin. Evolves to Orc.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="her1">Bugbear</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Earth</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		A large furry golbin-like creature that lurks in caves.
+		They have .
+		Evolves from Goblin. Evolves to Giant.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hfr1">Lizardman</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Fire</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Reptilian humanoid creature that lives in the desert.
+		They hide in the sand for hours and pounce on anyone that comes their way.
+		Evolves from Goblin. Evolves to Saurian.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hel1">Sphinx</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Elec</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Goblin. Evolves to Manticore.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hdk1">Minotaur</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Dark</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Goblins. Evolves to Sarangay.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hlt2">Werejackal</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Light</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Werecub. Evolves to Werewolf.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="har2">Alkanost</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Air</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Harpy. Evolves to Erinyes.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwt2">Merman</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Water</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Sahuagin. Evolves to Umibozu.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwd2">Satyr</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Wood</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Faun. Evolves to Centaur.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hno2">Ogre</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>None</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Orc. Evolves to Troll.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="her2">Giant</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Earth</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Bugbear. Evolves to Cyclops.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hfr2">Saurian</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Fire</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Lizardman. Evolves to Naga.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hel2">Manticore</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Elec</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Sphinx. Evolves to Shedu.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hdk2">Sarangay</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Dark</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Minotaur. Evolves to Gyuki.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hlt3">Werewolf</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Light</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Werejackal.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="har3">Erinyes</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Air</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Alkanost.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwt3">Umibozu</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Water</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Merman.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hwd3">Centaur</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Wood</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Satyr.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hno3">Troll</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>None</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Ogre.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="her3">Cyclops</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Light</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Werejackal.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hfr3">Naga</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Fire</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Saurian.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hlt3">Shedu</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Elec</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Manticore.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<table border="2">
+	<tr>
+		<th>Species</th>
+		<td colspan="2" align="center"><a name="hdk3">Gyuki</a></td>
+		<th>Genus</th>
+		<td colspan="2">Humanoid</td>
+		<th>Affinity</th>
+		<td>Dark</td>
+		<th>CPS Code</th>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Mugshot</th>
+		<th>Sprite</th>
+		<th colspan="8">Description</th>
+	</tr>
+	<tr>
+		<td><img src="files/mugneed.png"></td>
+		<td><img src="files/spriteneed.png"></td>
+		<td colspan="8" align="center">
+		Evolves from Sarangay.
+		</td>
+	</tr>
+	<tr>
+		<th colspan="3">Attributes</th>
+		<th colspan="4">Resistances</th>
+		<th colspan="3">Skills</th>
+	</tr>
+	<tr>
+		<td></td>
+		<th>Base</th>
+		<th>Growth</th>
+		<th colspan="2">Elements</th>
+		<th colspan="2">S. Effects</th>
+		<th>Dynamic</th>
+		<th>Passive</th>
+		<th>Auto</th>
+	</tr>
+	<tr>
+		<td>STR</td>
+		<td></td>
+		<td></td>
+		<td>DK</td>
+		<td></td>
+		<td>TOX</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>DEF</td>
+		<td></td>
+		<td></td>
+		<td>EL</td>
+		<td></td>
+		<td>DEL</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>AGI</td>
+		<td></td>
+		<td></td>
+		<td>FR</td>
+		<td></td>
+		<td>SPC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>EVA</td>
+		<td></td>
+		<td></td>
+		<td>ER</td>
+		<td></td>
+		<td>FRA</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>MAG</td>
+		<td></td>
+		<td></td>
+		<td>WD</td>
+		<td></td>
+		<td>IBZ</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>RES</td>
+		<td></td>
+		<td></td>
+		<td>WT</td>
+		<td></td>
+		<td>BLS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>POT</td>
+		<td></td>
+		<td></td>
+		<td>AR</td>
+		<td></td>
+		<td>CLM</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>IMM</td>
+		<td></td>
+		<td></td>
+		<td>LT</td>
+		<td></td>
+		<td>PNC</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br/>
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.2">9.2 Beast</a></h1>
+<p>
+</p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#ban0">Weevil</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#blt1">Dire Wolf</a></td>
+		<td><a href="#bar1">Badb Catha</a></td>
+		<td><a href="#bwt1">Tarrasque</a></td>
+		<td><a href="#bwd1">Yako</a></td>
+		<td><a href="#bno1">White Rabbit</a></td>
+		<td><a href="#ber1">Chupacabra</a></td>
+		<td><a href="#bfr1">Firebird</a></td>
+		<td><a href="#bel1">Cait Sith</a></td>
+		<td><a href="#bdk1">Cu Sith</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#blt2">Inugami</a></td>
+		<td><a href="#bar2">Roc</a></td>
+		<td><a href="#bwt2">Gui Xian</a></td>
+		<td><a href="#bwd2">Ninko</a></td>
+		<td><a href="#bno2">Inaba</a></td>
+		<td><a href="#ber2">Sasquatch</a></td>
+		<td><a href="#bfr2">Feng Haung</a></td>
+		<td><a href="#bel2">Bakeneko</a></td>
+		<td><a href="#bdk2">Black Dog</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#blt3">Okami</a></td>
+		<td><a href="#bar3">Garuda</a></td>
+		<td><a href="#bwt3">Genbu</a></td>
+		<td><a href="#bwd3">Kitsune</a></td>
+		<td><a href="#bno3">Foo Foo</a></td>
+		<td><a href="#ber3">Wendigo</a></td>
+		<td><a href="#bfr3">Phoenix</a></td>
+		<td><a href="#bel3">Orthrus</a></td>
+		<td><a href="#bdk3">Cerberus</a></td>
+	</tr>
+</table>
+<br/>
+
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.3">9.3 Elemental</a></h1>
+<p>
+</p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#ean0">Slime</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#elt1">White Pudding</a></td>
+		<td><a href="#ear1">Violet Gel</a></td>
+		<td><a href="#ewt1">Cyan Gel</a></td>
+		<td><a href="#ewd1">Olive Pudding</a></td>
+		<td><a href="#eno1">Grey Ooze</a></td>
+		<td><a href="#eer1">Brown Pudding</a></td>
+		<td><a href="#efr1">Ochre Jelly</a></td>
+		<td><a href="#eel1">Mustard Jelly</a></td>
+		<td><a href="#edk1">Black Budding</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#elt2">Platinum Cube</a></td>
+		<td><a href="#ear2">Chromium Cube</a></td>
+		<td><a href="#ewt2">Cobalt Cube</a></td>
+		<td><a href="#ewd2">Copper Cube</a></td>
+		<td><a href="#eno2">Silver Cube</a></td>
+		<td><a href="#eer2">Zinc Cube</a></td>
+		<td><a href="#efr2">Iron Cube</a></td>
+		<td><a href="#eel2">Gold Cube</a></td>
+		<td><a href="#edk2">Lead Cube</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#elt3">Diamond</a></td>
+		<td><a href="#ear3">Amethyst</a></td>
+		<td><a href="#ewt3">Sapphire</a></td>
+		<td><a href="#ewd3">Emerald</a></td>
+		<td><a href="#eno3">Opal</a></td>
+		<td><a href="#eer3">Topaz</a></td>
+		<td><a href="#efr3">Ruby</a></td>
+		<td><a href="#eel3">Orthrus</a></td>
+		<td><a href="#edk3">Obsidian</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.4">9.4 Dragon</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Wyvern</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">White Dragon</a></td>
+		<td><a href="#dar1">Purple Dragon</a></td>
+		<td><a href="#dwt1">Blue Dragon</a></td>
+		<td><a href="#dwd1">Green Dragon</a></td>
+		<td><a href="#dno1">Grey Dragon</a></td>
+		<td><a href="#der1">Brown Dragon</a></td>
+		<td><a href="#dfr1">Red Dragon</a></td>
+		<td><a href="#del1">Yellow Dragon</a></td>
+		<td><a href="#ddk1">Black Dragon</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Yurlungr</a></td>
+		<td><a href="#dar2">Gucumatz</a></td>
+		<td><a href="#dwt2">Mizuchi</a></td>
+		<td><a href="#dwd2">Zhu Yin</a></td>
+		<td><a href="#dno2">Vouivre</a></td>
+		<td><a href="#der2">Python</a></td>
+		<td><a href="#dfr2">Kingu</a></td>
+		<td><a href="#del2">Seiryu</a></td>
+		<td><a href="#ddk2">Fafnir</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Bahamut</a></td>
+		<td><a href="#dar3">Quetzacoatl</a></td>
+		<td><a href="#dwt3">Hydra</a></td>
+		<td><a href="#dwd3">Orochi</a></td>
+		<td><a href="#dno3">Lindworm</a></td>
+		<td><a href="#der3">Jormungandr</a></td>
+		<td><a href="#dfr3">Tiamat</a></td>
+		<td><a href="#del3">Huang Long</a></td>
+		<td><a href="#ddk3">Nidhoggr</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.5">9.5 Fiend</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Imp</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">White Jinn</a></td>
+		<td><a href="#dar1">Purple Jinn</a></td>
+		<td><a href="#dwt1">Blue Jinn</a></td>
+		<td><a href="#dwd1">Green Jinn</a></td>
+		<td><a href="#dno1">Grey Jinn</a></td>
+		<td><a href="#der1">Brown Jinn</a></td>
+		<td><a href="#dfr1">Red Jinn</a></td>
+		<td><a href="#del1">Yellow Jinn</a></td>
+		<td><a href="#ddk1">Black Jinn</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Astaroth</a></td>
+		<td><a href="#dar2">Pazuzu</a></td>
+		<td><a href="#dwt2">Moloch</a></td>
+		<td><a href="#dwd2">Azazel</a></td>
+		<td><a href="#dno2">Morax</a></td>
+		<td><a href="#der2">Mithras</a></td>
+		<td><a href="#dfr2">Adramelech</a></td>
+		<td><a href="#del2">Baphomet</a></td>
+		<td><a href="#ddk2">Abaddon</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Lucifer</a></td>
+		<td><a href="#dar3">Beelzebub</a></td>
+		<td><a href="#dwt3">Leviathan</a></td>
+		<td><a href="#dwd3">Bael</a></td>
+		<td><a href="#dno3">Belphegor</a></td>
+		<td><a href="#der3">Mammon</a></td>
+		<td><a href="#dfr3">Satan</a></td>
+		<td><a href="#del3">Asmodeus</a></td>
+		<td><a href="#ddk3">Samael</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.6">9.6 Fey</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Pixie</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">Muse</a></td>
+		<td><a href="#dar1">Aurae</a></td>
+		<td><a href="#dwt1">Naiad</a></td>
+		<td><a href="#dwd1">Dryad</a></td>
+		<td><a href="#dno1">Maenad</a></td>
+		<td><a href="#der1">Oread</a></td>
+		<td><a href="#dfr1">Lampad</a></td>
+		<td><a href="#del1">Nephel</a></td>
+		<td><a href="#ddk1">Hyade</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Aspara</a></td>
+		<td><a href="#dar2">Leprechaun</a></td>
+		<td><a href="#dwt2">Mizuchi</a></td>
+		<td><a href="#dwd2">Zhu Yin</a></td>
+		<td><a href="#dno2">Vouivre</a></td>
+		<td><a href="#der2">Brownie</a></td>
+		<td><a href="#dfr2"></a></td>
+		<td><a href="#del2">Xana</a></td>
+		<td><a href="#ddk2">Alpluachra</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Bahamut</a></td>
+		<td><a href="#dar3">Quetzacoatl</a></td>
+		<td><a href="#dwt3">Hydra</a></td>
+		<td><a href="#dwd3">Orochi</a></td>
+		<td><a href="#dno3">Lindworm</a></td>
+		<td><a href="#der3">Jormungandr</a></td>
+		<td><a href="#dfr3">Tiamat</a></td>
+		<td><a href="#del3">Huang Long</a></td>
+		<td><a href="#ddk3">Nidhoggr</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<br/>
+<h1><a name="9.7">9.7 Spectre</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Wyvern</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">White Dragon</a></td>
+		<td><a href="#dar1">Purple Dragon</a></td>
+		<td><a href="#dwt1">Blue Dragon</a></td>
+		<td><a href="#dwd1">Green Dragon</a></td>
+		<td><a href="#dno1">Grey Dragon</a></td>
+		<td><a href="#der1">Brown Dragon</a></td>
+		<td><a href="#dfr1">Red Dragon</a></td>
+		<td><a href="#del1">Yellow Dragon</a></td>
+		<td><a href="#ddk1">Black Dragon</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Yurlungr</a></td>
+		<td><a href="#dar2">Gucumatz</a></td>
+		<td><a href="#dwt2">Mizuchi</a></td>
+		<td><a href="#dwd2">Zhu Yin</a></td>
+		<td><a href="#dno2">Vouivre</a></td>
+		<td><a href="#der2">Python</a></td>
+		<td><a href="#dfr2">Kingu</a></td>
+		<td><a href="#del2">Seiryu</a></td>
+		<td><a href="#ddk2">Fafnir</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Bahamut</a></td>
+		<td><a href="#dar3">Quetzacoatl</a></td>
+		<td><a href="#dwt3">Hydra</a></td>
+		<td><a href="#dwd3">Orochi</a></td>
+		<td><a href="#dno3">Lindworm</a></td>
+		<td><a href="#der3">Jormungandr</a></td>
+		<td><a href="#dfr3">Tiamat</a></td>
+		<td><a href="#del3">Huang Long</a></td>
+		<td><a href="#ddk3">Nidhoggr</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<h1><a name="9.8">9.8 Nature</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Wyvern</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">White Dragon</a></td>
+		<td><a href="#dar1">Purple Dragon</a></td>
+		<td><a href="#dwt1">Blue Dragon</a></td>
+		<td><a href="#dwd1">Green Dragon</a></td>
+		<td><a href="#dno1">Grey Dragon</a></td>
+		<td><a href="#der1">Brown Dragon</a></td>
+		<td><a href="#dfr1">Red Dragon</a></td>
+		<td><a href="#del1">Yellow Dragon</a></td>
+		<td><a href="#ddk1">Black Dragon</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Yurlungr</a></td>
+		<td><a href="#dar2">Gucumatz</a></td>
+		<td><a href="#dwt2">Mizuchi</a></td>
+		<td><a href="#dwd2">Zhu Yin</a></td>
+		<td><a href="#dno2">Vouivre</a></td>
+		<td><a href="#der2">Python</a></td>
+		<td><a href="#dfr2">Kingu</a></td>
+		<td><a href="#del2">Seiryu</a></td>
+		<td><a href="#ddk2">Fafnir</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Bahamut</a></td>
+		<td><a href="#dar3">Quetzacoatl</a></td>
+		<td><a href="#dwt3">Hydra</a></td>
+		<td><a href="#dwd3">Orochi</a></td>
+		<td><a href="#dno3">Lindworm</a></td>
+		<td><a href="#der3">Jormungandr</a></td>
+		<td><a href="#dfr3">Tiamat</a></td>
+		<td><a href="#del3">Huang Long</a></td>
+		<td><a href="#ddk3">Nidhoggr</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+<h1><a name="9.9">9.9 Abyssal</a></h1>
+<p></p>
+<table border = "2" align="center">
+	<tr>
+		<th></th>
+		<th>Light</th>
+		<th>Air</th>
+		<th>Water</th>
+		<th>Wood</th>
+		<th>Neutral</th>
+		<th>Earth</th>
+		<th>Fire</th>
+		<th>Elec</th>
+		<th>Dark</th>
+	</tr>
+	<tr>
+		<td><b>Stage 0</b></td>
+		<td colspan="9" align="center"><a href="#dan0">Wyvern</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 1</b></td>
+		<td><a href="#dlt1">White Dragon</a></td>
+		<td><a href="#dar1">Purple Dragon</a></td>
+		<td><a href="#dwt1">Blue Dragon</a></td>
+		<td><a href="#dwd1">Green Dragon</a></td>
+		<td><a href="#dno1">Grey Dragon</a></td>
+		<td><a href="#der1">Brown Dragon</a></td>
+		<td><a href="#dfr1">Red Dragon</a></td>
+		<td><a href="#del1">Yellow Dragon</a></td>
+		<td><a href="#ddk1">Black Dragon</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 2</b></td>
+		<td><a href="#dlt2">Yurlungr</a></td>
+		<td><a href="#dar2">Gucumatz</a></td>
+		<td><a href="#dwt2">Mizuchi</a></td>
+		<td><a href="#dwd2">Zhu Yin</a></td>
+		<td><a href="#dno2">Vouivre</a></td>
+		<td><a href="#der2">Python</a></td>
+		<td><a href="#dfr2">Kingu</a></td>
+		<td><a href="#del2">Seiryu</a></td>
+		<td><a href="#ddk2">Fafnir</a></td>
+	</tr>
+	<tr>
+		<td><b>Stage 3</b></td>
+		<td><a href="#dlt3">Bahamut</a></td>
+		<td><a href="#dar3">Quetzacoatl</a></td>
+		<td><a href="#dwt3">Hydra</a></td>
+		<td><a href="#dwd3">Orochi</a></td>
+		<td><a href="#dno3">Lindworm</a></td>
+		<td><a href="#der3">Jormungandr</a></td>
+		<td><a href="#dfr3">Tiamat</a></td>
+		<td><a href="#del3">Huang Long</a></td>
+		<td><a href="#ddk3">Nidhoggr</a></td>
+	</tr>
+</table>
+<p><a href="#top">[top]</a></p>
+</div>
+
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,2787 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-6.0.html">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-8.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">7.0 Items</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#7.1">7.1 Weapons</a></h2>
+<h2><a href="#7.2">7.2 Clothing</a></h2>
+<h2><a href="#7.3">7.3 Accessories</a></h2>
+<h2><a href="#7.4">7.4 Parts</a></h2>
+<h2><a href="#7.5">7.5 Manuals</a></h2>
+<h2><a href="#7.6">7.6 Expendables</a></h2>
+<h2><a href="#7.7">7.7 Key Items</a></h2>
+</div>
+
+<div id="content">
+<h1><a name="7.1">7.1 Weapons</a></h1>
+<br/>
+	<h2>7.1.1 Blade</h2>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWA_000</td>
+		<td>Blade Base</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_001</td>
+		<td>Gladius</td>
+		<td><img src="files/icons/gladius.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_002</td>
+		<td>Boken</td>
+		<td><img src="files/icons/bokken.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_003</td>
+		<td>Katzbalger</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_004</td>
+		<td>Shuang Gou</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_005</td>
+		<td>Suburito</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_006</td>
+		<td>Katana</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_007</td>
+		<td>Gram</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_008</td>
+		<td>Hrunting</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_009</td>
+		<td>Dhami</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_010</td>
+		<td>Goujian Sword</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_011</td>
+		<td>Zanbato</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_012</td>
+		<td>Monohoshi Zao</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_013</td>
+		<td>Juuchi Yosamu</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_014</td>
+		<td>Kiku-Ichimonji</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_015</td>
+		<td>Dyrnwyn</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_016</td>
+		<td>Seven-Star Sword</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_017</td>
+		<td>Kogarasy Maru</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_018</td>
+		<td>Yawaraki-Te</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_019</td>
+		<td>Crocea Mors</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_020</td>
+		<td>Ama-No-Habakiri</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_021</td>
+		<td>Otenta</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_022</td>
+		<td>Clarent</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_023</td>
+		<td>Kusanagi-No-Tsurugi</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+	<tr>
+		<td>IWA_024</td>
+		<td>Excalibur</td>
+		<td><img src="files/icons/blade.png"></td>
+	</tr>
+</table>
+<br/>
+<h2>7.1.2 Sabre</h2>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWB_000</td>
+		<td>Sabre Base</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_001</td>
+		<td>Cutlass</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_002</td>
+		<td>Dao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_003</td>
+		<td>Scimitar</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_004</td>
+		<td>Falchion</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_005</td>
+		<td>Wodao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_006</td>
+		<td>Krabi</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_007</td>
+		<td>Saif</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_008</td>
+		<td>Yatagan</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_009</td>
+		<td>Kopis</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_010</td>
+		<td>Falcata</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_011</td>
+		<td>Liuye Dao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_012</td>
+		<td>Miao Dao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_013</td>
+		<td>Panabas</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_014</td>
+		<td>Kampilan</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_015</td>
+		<td>Kilij</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_016</td>
+		<td>Marmeluke Sword</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_017</td>
+		<td>Chang Dao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_018</td>
+		<td>Dha</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_019</td>
+		<td>Shashka</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_020</td>
+		<td>Cortana</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_021</td>
+		<td>Niuwei Dao</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_022</td>
+		<td>Shamshir</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_023</td>
+		<td>Kastane</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+	<tr>
+		<td>IWB_024</td>
+		<td>Zulfiqar</td>
+		<td><img src="files/icons/sabre.png"></td>
+	</tr>
+</table>
+<br/>
+<h2>7.1.3 Rapier</h2>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+<br/>
+<h3>7.1.4 Greatsword</h3><img src="files/icons/greatsword.png">
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWD_000</td>
+		<td>Greatsword Base</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_001</td>
+		<td>Claymore</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_002</td>
+		<td>Hiebmesser</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_003</td>
+		<td>Precieuse</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_004</td>
+		<td>Executioner</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_005</td>
+		<td>Moraltach</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_006</td>
+		<td>Seven-Branched Sword</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_007</td>
+		<td>Arondight</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_008</td>
+		<td>Galatine</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_009</td>
+		<td>Estramacon</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_010</td>
+		<td>Sobrelame</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_011</td>
+		<td>Tyrfing</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_012</td>
+		<td>Hofud</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_013</td>
+		<td>Ram-Dao</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_014</td>
+		<td>Thuan Thien</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_015</td>
+		<td>Chrysoar</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_016</td>
+		<td>Kladenets</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_017</td>
+		<td>Hrotti</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_018</td>
+		<td>Sainchamsageom</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_019</td>
+		<td>Hauteclaire</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_020</td>
+		<td>Durendal</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_021</td>
+		<td>Almacia</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_022</td>
+		<td>Joyeuse</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_023</td>
+		<td>Marmiadoise</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+	<tr>
+		<td>IWD_024</td>
+		<td>Claiomh Solais</td>
+		<td><img src="files/icons/greatsword"></td>
+	</tr>
+</table>
+<br/>
+		<h3>7.1.5 Handaxe</h3>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWE_000</td>
+		<td>Handaxe Base</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_001</td>
+		<td>Hatchet</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_002</td>
+		<td>Flint Axe</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_003</td>
+		<td>Hurlbat</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_004</td>
+		<td>Spanner Wrench</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_005</td>
+		<td>Valaska</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_006</td>
+		<td>Palstave</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_007</td>
+		<td>Tomahawk</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_008</td>
+		<td>Nzappa Zap</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_009</td>
+		<td>Monkey Wrench</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_010</td>
+		<td>Power Wrench</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_011</td>
+		<td>Horseman's Pick</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_012</td>
+		<td>Ankus</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_013</td>
+		<td>Bark Spud</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_014</td>
+		<td>Ono</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_015</td>
+		<td>Hunga Munga</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_016</td>
+		<td>Breaker Bar</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_017</td>
+		<td>Ice Axe</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_018</td>
+		<td>Golok</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_019</td>
+		<td>Mambele</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_020</td>
+		<td>Crow Bar</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_021</td>
+		<td>Bearded Axe</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_022</td>
+		<td>Sagaris</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_023</td>
+		<td>Francisca</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_024</td>
+		<td>Fasces</td>
+		<td><img src="files/icons/handaxe.png"></td>
+	</tr>
+</table>
+<br/>
+		<h3>7.1.6 Hammer</h3>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWE_000</td>
+		<td>Hammer Base</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_001</td>
+		<td>Gavel</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_002</td>
+		<td>Rubber Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_003</td>
+		<td>Maul</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_004</td>
+		<td>Rock Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_005</td>
+		<td>Croquet Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_006</td>
+		<td>Rawhide Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_007</td>
+		<td>Splitting Maul</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_008</td>
+		<td>Spike Maul</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_009</td>
+		<td>Claw Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_010</td>
+		<td>Ball-Peen Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_011</td>
+		<td>Polo Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_012</td>
+		<td>Percussion Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_013</td>
+		<td>Bettle Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_014</td>
+		<td>Wooden Mallet</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_015</td>
+		<td>Sledgehammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_016</td>
+		<td>Reflex Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_017</td>
+		<td>Olympic Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_018</td>
+		<td>Deadblow Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_019</td>
+		<td>War Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_020</td>
+		<td>Otsuchi</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_021</td>
+		<td>Lucerne Hammer</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_022</td>
+		<td>Axe of Perun</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_023</td>
+		<td>Ukkonvasara</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+	<tr>
+		<td>IWE_024</td>
+		<td>Mjollnir</td>
+		<td><img src="files/icons/hammer.png"></td>
+	</tr>
+</table>
+<br/>
+		<h3>7.1.7 Scythe</h3>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWG_000</td>
+		<td>Scythe Base</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_001</td>
+		<td>Kuwa</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_002</td>
+		<td>Kama</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_003</td>
+		<td>Wheel Scythe</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_004</td>
+		<td>Aruval</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_005</td>
+		<td>Falx</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_006</td>
+		<td>Arit</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_007</td>
+		<td>War Scythe</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_008</td>
+		<td>Rhomphaia</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_009</td>
+		<td>Sica</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_010</td>
+		<td>Celurit</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_011</td>
+		<td>Khopesh</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_012</td>
+		<td>Fauchard</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_013</td>
+		<td>Kerambit</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_014</td>
+		<td>Boline</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_015</td>
+		<td>Bill-Guisarme</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_016</td>
+		<td>Bagging Hook</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_017</td>
+		<td>Shotel</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_018</td>
+		<td>Red Sickle</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_019</td>
+		<td>Dagger-Axe</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_020</td>
+		<td>Harpe</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_021</td>
+		<td>Golden Sickle</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_022</td>
+		<td>Sickle of Gabriel</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_023</td>
+		<td>Sickle of Cronus</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_024</td>
+		<td>Death Scythe</td>
+		<td><img src="files/icons/scythe.png"></td>
+	</tr>
+</table>
+<br/>
+		<h3>7.1.8 Greataxe</h3>
+<br/>
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWG_000</td>
+		<td>Greataxe Base</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_001</td>
+		<td>Broad Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_002</td>
+		<td>Pick Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_003</td>
+		<td>Hafted Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_004</td>
+		<td>Battle Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_005</td>
+		<td>Mattock</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_006</td>
+		<td>Ice Pick</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_007</td>
+		<td>Hache</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_008</td>
+		<td>Masakari</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_009</td>
+		<td>Doloire</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_010</td>
+		<td>Skeggox</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_011</td>
+		<td>Adze</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_012</td>
+		<td>Twybil</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_013</td>
+		<td>Hallagan</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_014</td>
+		<td>Pulaski</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_015</td>
+		<td>Sparth</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_016</td>
+		<td>Lochaber Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_017</td>
+		<td>Keteriya</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_018</td>
+		<td>Fire Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_019</td>
+		<td>Parashu</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_020</td>
+		<td>Labrys</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_021</td>
+		<td>Tabar Zin</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_022</td>
+		<td>Oshe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_023</td>
+		<td>Guillotine Axe</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+	<tr>
+		<td>IWG_024</td>
+		<td>Gandasa</td>
+		<td><img src="files/icons/greataxe.png"></td>
+	</tr>
+</table>
+<br/>
+		<h3>7.1.9 Javelin</h3><img src="files/icons/javelin.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.10 Pike</h3><img src="files/icons/pike.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.11 Lance</h3><img src="files/icons/lance.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.12 Polearm</h3><img src="files/icons/polearm.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.13 Club</h3><img src="files/icons/club.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.14 Rod</h3><img src="files/icons/rod.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.15 Wand</h3><img src="files/icons/wand.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.16 Mace</h3><img src="files/icons/mace.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.17 Knife</h3><img src="files/icons/knife.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.18 Bow</h3><img src="files/icons/bow.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.20 Flail</h3><img src="files/icons/flail.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+		<h3>7.1.21 Knuckles</h3><img src="files/icons/knuxs.png">
+<table border="2">
+	<tr>
+		<th>CPS</th>
+		<th>Name</th>
+		<th>Icon</th>
+	</tr>
+	<tr>
+		<td>IWC_000</td>
+		<td>Rapier Base</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_001</td>
+		<td>Foil</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_002</td>
+		<td>Flyssa</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_003</td>
+		<td>Epee</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_004</td>
+		<td>Espada Ropera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_005</td>
+		<td>Jian</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_006</td>
+		<td>Pata</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_007</td>
+		<td>Estoc</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_008</td>
+		<td>Fleruet</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_009</td>
+		<td>Schiavona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_010</td>
+		<td>Spadroon</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_011</td>
+		<td>Mo Ye</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_012</td>
+		<td>Gan Jiang</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_013</td>
+		<td>Firangi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_014</td>
+		<td>Khanda</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_015</td>
+		<td>Colichemarde</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_016</td>
+		<td>Flamberge</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_017</td>
+		<td>Glory of Ten Powers</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_018</td>
+		<td>Asi</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_019</td>
+		<td>Lobera</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_020</td>
+		<td>Colada</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_021</td>
+		<td>Tizona</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_022</td>
+		<td>Ice Brook Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_023</td>
+		<td>Azoth Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+	<tr>
+		<td>IWC_024</td>
+		<td>Vorpal Sword</td>
+		<td><img src="files/icons/rapier.png"></td>
+	</tr>
+</table>
+<br/>
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.2">7.2 Clothing</a></h1>
+<br/>
+	<h2>7.2.1 Headgear</h2>
+		<h3>7.2.1.1 Full-Helm</h3><img src="files/icons/fhelm.png">
+		<h3>7.2.1.2 Half-Helm</h3><img src="files/icons/hhelm.png">
+		<h3>7.2.1.3 Hat</h3><img src="files/icons/hat.png">
+		<h3>7.2.1.4 Hood</h3><img src="files/icons/hood.png">
+		<h3>7.2.1.5 Cap</h3><img src="files/icons/cap.png">
+	<h2>7.2.2 Armor</h2>
+		<h3>7.2.2.1 Plate</h3><img src="files/icons/plate.png">
+		<h3>7.2.2.2 Mail</h3><img src="files/icons/mail.png">
+		<h3>7.2.2.3 Lamellar</h3><img src="files/icons/lamellar.png">
+		<h3>7.2.2.4 Hard Cloth</h3><img src="files/icons/fiber.png">
+		<h3>7.2.2.5 Soft Cloth</h3><img src="files/icons/cloth.png">
+	<h2>7.2.3 Armguard</h2>
+		<h3>7.2.3.1 Great Shield</h3><img src="files/icons/gshield.png">
+		<h3>7.2.3.2 Round Shield</h3><img src="files/icons/rshield.png">
+		<h3>7.2.3.3 Buckler</h3><img src="files/icons/buckler.png">
+		<h3>7.2.3.4 Gauntlet</h3><img src="files/icons/gauntlet.png">
+		<h3>7.2.3.5 Gloves</h3><img src="files/icons/gloves.png">
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.3">7.3 Accessories</a></h1>
+<br/>
+	<h2>7.3.1 Footwear</h2><img src="files/icons/footwear.png">
+	<h2>7.3.2 Jewellery</h2><img src="files/icons/jewellery.png">
+	<h2>7.3.3 Adornment</h2><img src="files/icons/adornment.png">
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.4">7.4 Parts</a></h1>
+<br/>
+	<h2>7.4.1 Melee</h2><img src="files/icons/melee.png">
+	<h2>7.4.2 Bullet</h2><img src="files/icons/bullet.png">
+	<h2>7.4.3 Explosive</h2><img src="files/icons/explosive.png">
+	<h2>7.4.4 Chemical</h2><img src="files/icons/chemical.png">
+	<h2>7.4.5 Energy</h2><img src="files/icons/energy.png">
+	<h2>7.4.6 Sensor</h2><img src="files/icons/sensor.png">
+	<h2>7.4.7 Jammer</h2><img src="files/icons/jammer.png">
+	<h2>7.4.8 Generator</h2><img src="files/icons/generator.png">
+	<h2>7.4.9 Motor</h2><img src="files/icons/motor.png">
+	<h2>7.4.10 Shell</h2><img src="files/icons/shell.png">
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.5">7.5 Manuals</a></h1>
+<br/>
+	<h2>7.5.1 Dynamic</h2>
+	<h2>7.5.2 Passive</h2>
+	<h2>7.5.3 Auto</h2>
+	<h2>7.5.4 Junction</h2>
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.6">7.6 Expendables</a></h1>
+<br/>
+	<h2>7.6.1 Offensive</h2>
+	<h2>7.6.2 Defensive</h2>
+	<h2>7.6.3 Healing</h2>
+	<h2>7.6.4 Stat Mod</h2>
+<p><a href="#top">[top]</a></p>
+<h1><a name="7.7">7.7 Key Items</a></h1>
+<br/>
+	<h2>7.7.1 Main</h2>
+	<h2>7.7.2 Quest</h2>
+<p><a href="#top">[top]</a></p>
+</div>
+
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

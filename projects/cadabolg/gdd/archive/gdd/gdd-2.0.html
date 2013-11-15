@@ -1,0 +1,268 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="files/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<title>Cadabolg ~ Game Design Document</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner">
+
+<h1 style="font-size:30;color:rgb(150,150,150);text-align:center;position:relative;top:15">~K4SM Devteam~</h1>
+<h1 style="color:rgb(10,10,10);font-size:70;position:relative;z-index:1;top:20;left:100">Cadabolg</h1>
+<h1 style="color:white;position:relative;z-index:2;top:-20;left:150;">~ Game Design Document</h1>
+
+<center style="margin:0 0 0 0;">
+<a href="gdd-1.0.html">prev</a>
+<a href="gdd-toc.html">home</a>
+<a href="gdd-3.0.html">next</a>
+</center>
+
+<h1 style="position:relative;font-family:Special Elite;color:rgb(200,200,200);text-align:left;font-size:30;">2.0 Core Gameplay</h1>
+</div>
+
+<div id="toc">
+<h1><a name="top">Contents</a></h1>
+<h2><a href="#2.1">2.1 Game Modes</a></h2>
+<h2><a href="#2.2">2.2 Controls</a></h2>
+</div>
+
+<div id="content">
+
+<h1><a name="2.1">2.1 Game Modes</a></h1>
+<p>
+</p>
+<h2>2.1.1 Online Play</h2>
+<p>
+This mode is the "single player campaign" of the game. The Player completes quests, builds a
+virtual army, and interact with other Players to progress the plot. The game takes note of
+when the Player plays the game in real time as that corresponds to when the scripted other
+Player come online in "game time". This allows for some degree of non-linear storytelling.
+It has the following features:
+</p>
+<ul>
+	<li>Unit Roster</li>
+	<li>Inventory</li>
+	<li>Compendium</li>
+	<li>Friends</li>
+	<li>Messages</li>
+	<li>Chat</li>
+	<li>News</li>
+	<li>Quests</li>
+	<li>Achievements</li>
+	<li>Statistics</li>
+</ul>
+<p>
+<em>Unit Roster</em> allows the Player to see all the members they have recruited and change
+their equipment, skills and modify their attributes.
+<br/>
+<br/>
+<em>Rasayana Window</em> allows the Player to modify items using the ecrys they have gathered.
+<br/>
+<br/>
+<em>Compendium</em> is a compilation of all information that the Player encounters in the game. This
+includes human, monster, golems, weapons, armor, parts etc.
+<br/>
+<br/>
+<em>Friends</em> lists all the other players that the Player comes in contact with. This feature
+allows the player to see the setups of other Players 
+<br/>
+<br/>
+<em>Messages</em> keeps private messages exchanged between players. This feature lets you read,
+reply, archive, and delete the messages. Additionally, you can send a friend request to the other
+player. If this is successful, then the other player is added to your Friends list.
+<br/>
+<br/>
+<em>Chat</em> allows two-way communication between the Player and his/her Friends. This serves as
+the modus of dialogue in this game.
+<br/>
+<br/>
+<em>Quests</em> lists the available battles that the Player can accept. The Quests available depends
+on when the Player logs into the game in "real time". Usually there are 64 quests available at any 
+time, but only a maximum of 16 can be seen based on pre-requisite quests or plot events the Player 
+needs to accomplish before undertaking them.
+<br/>
+<br/>
+<em>Achievements</em> lists some goals that player's can pursue for bragging rights to other players.
+These goals are completely unecessary to progressing the plot, but getting certain achievements can
+improve the Player's reputation which makes some plot-related events easier to accomplish.
+<br/>
+<br/>
+<em>Statistics</em> takes note of some aspects of the player's performance (e.g. highest damage dealt,
+number of wins, number of losses etc.). This frequently ties into Achievements, which are often
+granted when some statistics reach a certain level. Statistics are to make the player feel empowered
+in the long term as they see their characters grow stronger over time.
+</p>
+<h2>2.1.2 Offline Play</h2>
+<p>
+This mode is a "limited" form of the game (hence, the demo). It loads in one of the player's save 
+files and anything done in Offline Play transfers to Online Play. This mode is more for players that
+wish to brush up on their skills or go after achievements. It has the following features:
+</p>
+<ul>
+	<li>Unit Roster</li>
+	<li>Inventory</li>
+	<li>Compendium</li>
+	<li>Achievements</li>
+	<li>Statistics</li>
+	<li>Tutorial</li>
+	<li>Practice</li>
+	<li>Grindfest</li>
+	<li>Speedrun</li>
+</ul>
+<p>
+<em>Tutorial</em> gives a refresher on the skills and techniques required to play the game at a 
+greater level of detail than what is touched on in Online Play. New tutorial episodes are added
+as the mechanic is covered in Online Play. Each episode takes you into a scripted battle with an
+AGM (Automated Game Master) that leads you through the mechanic and responds to how you perform it
+in battle. Players can leave a tutorial episode at any point.
+<br/>
+<br/>
+<em>Practice</em> allows the player to try a couple quests to practice some of their skills and
+trying out certain party and skill configurations. More quests become available as the plot 
+progresses. The match type of quests can be changed by the Player.
+<br/>
+<br/>
+<em>Grindfest</em> is a battle mode specifically made for player that want to grind for experience
+and items. The battle is a single continuous round. Players can control the frequency of waves,
+average level of enemies and the elemental affinity of the enemies. Note that in this mode you can't
+see the enemy's status on the HUD, as it is replaced by Grindfest settings.
+<br/>
+<br/>
+<em>Speedrun</em> allows you to replay old Miniboss, Boss and Superboss quests once they are beaten
+in Online Play to get better times and hence, better rewards and possible achievements.
+</p>
+<h2>2.2.3 Modding Tools</h2>
+<p>
+This mode is unlocked once Online Play is beaten. Includes a level builder and wave planner.
+</p>
+<p><a href="#top">[top]</a></p>
+
+
+<h1><a name="2.2">2.2 Control Scheme</a></h1>
+<h2>2.2.1. Hub (Online)</h2>
+<br/>
+<img src="files/statuskey.png" width="675" height="216" />
+<br/>
+<p>
+Up (Press): Move Cursor Up<br/>
+Left (Press): Move Cursor Left<br/>
+Down (Press): Move Cursor Down<br/>
+Right (Press): Move Cursor Right<br/>
+<br/>
+Z: Confirm<br/>
+X: Cancel<br/>
+<br/>
+Q: Quests<br/>
+W: Recruitment Office<br/>
+E: Messages<br/>
+R: Rasyana Window (when cursor is on item)<br/>
+T: Friends<br/>
+Y: Chat Window<br/>
+U: Unit Info (when cursor is on unit)<br/>
+I: Inventory<br/>
+O: <br/>
+P: Party Setup<br/>
+<br/>
+F1: Compendium<br/>
+F2: Statistics<br/>
+F3: Achievements<br/>
+F4: Logout Prompt<br/>
+</p>
+<p><a href="#top">[top]</a></p>
+<h2>2.2.1. Hub (Offline)</h2>
+<br/>
+<img src="files/hubkeyoff.png" width="675" height="216" />
+<br/>
+<p>
+Up (Press): Move Cursor Up<br/>
+Left (Press): Move Cursor Left<br/>
+Down (Press): Move Cursor Down<br/>
+Right (Press): Move Cursor Right<br/>
+<br/>
+Z: Confirm<br/>
+X: Cancel<br/>
+<br/>
+E: Grindfest<br/>
+R: Rasyana Window (when cursor is on item)<br/>
+T: Tutorial<br/>
+Y: Practice<br/>
+U: Unit Roster<br/>
+I: Inventory<br/>
+O: Speedrun<br/>
+P: Party Setup<br/>
+<br/>
+F1: Compendium<br/>
+F2: Statistics<br/>
+F3: Achievements<br/>
+F4: Logout Prompt<br/>
+</p>
+<p><a href="#top">[top]</a></p>
+<h2>2.2.3. Battle</h2>
+<br/>
+<img src="files/battlekey.png" width="675" height="216" />
+<br/>
+<p>
+Up (Press): Face Up<br/>
+Left (Press): Face Left<br/>
+Down (Press): Face Down<br/>
+Right (Press): Face Right<br/>
+<br/>
+Up (Hold): Move Up<br/>
+Left (Hold): Move Left<br/>
+Down (Hold): Move Down<br/>
+Right (Hold): Move Right<br/>
+<br/>
+C + Up: Roll Up<br/>
+C + Left: Roll Left<br/>
+C + Down: Roll Down<br/>
+C + Right: Roll Right<br/>
+<br/>
+Z (Press): Attack / Confirm<br/>
+X (Press): Block / Cancel<br/>
+<br/>
+A (Press): Use Phys Skill #1<br/>
+S (Press): Use Phys Skill #2<br/>
+D (Press): Use Phys Skill #3<br/>
+<br/>
+Q (Press): Use Magic Skill #1<br/>
+W (Press): Use Magic Skill #2<br/>
+E (Press): Use Magic Skill #3<br/>
+<br/>
+Q (Hold): Charge Magic Skill #1<br/> 
+W (Hold): Charge Magic Skill #2<br/>
+E (Hold): Charge Magic Skill #3<br/>
+<br/>
+Enter: Pause->Menu<br/>
+Spacebar: Pause-> Metasync Option<br/>
+Backspace: Pause->Change Target<br/>
+<br/>
+1: Use Item (Slot 1)<br/>
+2: Use Item (Slot 2)<br/>
+3: Use Item (Slot 3)<br/>
+4: Use Item (Slot 4)<br/>
+5: Use Item (Slot 5)<br/>
+6: Use Item (Slot 6)<br/>
+7: Use Item (Slot 7)<br/>
+8: Use Item (Slot 8)<br/>
+9: Use Item (Slot 9)<br/>
+<br/>
+F1: Pause -> Compendium<br/>
+F2: Pause -> Team AI Configuration<br/>
+F3: Pause -> Enemy Party Info<br/>
+F4: Pause -> Forfeit Prompt<br/>
+</p>
+<p><a href="#top">[top]</a></p>
+
+</div>
+<h2 style="color:white;font-size:15;text-align:center;">Web design by Kevin Chen &bull; Copyright &copy; 2011 K4SM</h2>
+</div>
+
+</body>
+
+</html>

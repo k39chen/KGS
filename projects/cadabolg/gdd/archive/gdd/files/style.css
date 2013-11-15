@@ -1,0 +1,98 @@
+body {
+	width: 800;
+	background: url("background.png") repeat;
+	background-color: black;
+	margin: 30 auto 30 auto;
+	font-size: 15;
+	font-family: Cambria;
+	color: black;
+}
+
+div#container {
+	margin: 20 auto 20 auto;
+	padding: 10 10 10 10;
+}
+
+div#banner {
+	padding: 0 10 10 10;
+	/*border-style: solid;*/
+}
+
+div#banner h1 {
+	font-family: Special Elite;
+	font-size: 40;
+	margin: 0 0 0 0;
+}
+
+div#banner h2 {
+	font-family: Cambria;
+	font-size: 15;
+	margin: 0 0 0 0;
+	color: white;
+}
+
+div#banner a {text-decoration: none;}
+div#banner a:visited {color: white;}
+div#banner a:hover {color: red;text-decoration: underline;}
+
+div#toc{
+	padding: 10 20 10 20;
+	border-style: solid;
+	border-radius: 20;
+	background-color: #CFCFCF;
+} 
+
+div#toc h1, h2, h3 {margin: 0 0 0 0;font-size: 15;}
+div#toc h4, h5 {margin: 0 0 0 0; font-size: 10;}
+div#toc h1 {margin-left: 0px;}
+div#toc h2 {margin-left: 50px;font-weight: normal;}
+div#toc h3 {margin-left: 100px;font-weight: normal;}
+div#toc h4 {margin-left: 150px;font-weight: normal;}
+div#toc h5 {margin-left: 200px;font-weight: normal;}
+div#toc a {text-decoration: none;}
+div#toc a:link {color:#FF0000;}
+div#toc a:visited {color:#0000FF;}
+div#toc a:hover{color:#C0C0C0;}
+
+div#content {
+	padding: 10 20 10 20;
+	border-style: solid;
+	border-radius: 20;
+	background-color: white;
+}
+
+div#content h1 {margin: 0 0 0 0; font-size: 24;}
+div#content h2 {font-size: 20;}
+div#content h3 {font-size: 15;}
+
+p {margin-top: 5;}
+
+table.checklist {
+	font-family: Cambria;
+	font-size: 1.1em;
+}
+table.checklist td {
+    padding-right: 50;
+}
+
+table.type1 {
+	font-family: Cambria;
+	border-width: 1px;
+	border-style: solid;
+}
+table.type1 th {
+	background: url(th.gif) repeat-x
+}
+table.type1 tr.odd {
+	background-color: #ebf3fa;
+}
+table.type1 tr.even {
+}
+
+table.type1 td {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: px;
+	border-style: solid;
+	border-color: #dadada;
+}

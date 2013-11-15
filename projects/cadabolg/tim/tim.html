@@ -1,0 +1,843 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html lang="en">
+  <head>
+    <title>Cadabolg | Technical Instruction Manual</title>
+    <meta name="generator" content="Studio 3 http://aptana.com/">
+    <meta name="author" content="KevinChen">
+    <!-- Load Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../files/style-ui.css">
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Tangerine|Special+Elite|Smythe|Forum|IM+Fell+English+SC|Ubuntu'>
+    <!-- Load Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type ="text/javascript" src="../files/script-common.js"></script>
+    <script type ="text/javascript" src="../files/script-toc.js"></script>
+    <script type ="text/javascript" src="../files/script-html.js"></script>
+    <!-- SyntaxHighlighter -->
+    <script type="text/javascript" src="../files/syntax/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../files/syntax/scripts/shBrushCpp.js"></script>
+    <link type="text/css" rel="stylesheet" href="../files/syntax/styles/shCoreDefault.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all()</script>
+  </head>
+  
+  <body>
+  
+  <div id="container">
+    
+    <div id="header">
+      <div id="banner"></div>
+      <div id="navbar"></div>
+      <h1 id="title">Technical Instruction Manual</h1>
+    </div>
+    
+    <div id="content">
+
+      <div id="toc">
+        <h1>Index</h1>
+        <script type="text/javascript">
+          $(document).ready (function(){createTOC();});
+        </script>
+      </div>
+      
+      <div class="module">
+        <h1>0.0 Technical Instruction Manual</h1>
+        <div class="section">
+        
+          <h2 style="color:transparent;font-size:0px">0.1 Cover</h2>
+          <div style="text-align:center;min-height:100%;">
+            <div style="height:40%;">
+              <span style="font-size:20px;"><b>K4SM Games Studio Inc.</b></span><br>
+              <center><img src="files/misc/kasm.png" width=200></center><br>
+            </div>
+            <div style="height:30%;vertical-align:middle;">
+              <span style="font-size:23px;">Technical Instruction Manual for:</span><br>
+              <hr style="margin:0;"></hr>
+              <span style="font-size:40px;"><b>Cadabolg</b>&trade;</span><br>
+            </div>
+            <div style="height:30%;">
+              <span style="font-size:16px;">Version 1.0.1</span><br>
+              <br>
+              <span style="font-size:16px;">Copyright &copy; 2011 K4SM Games Studio Ltd.</span><br>
+              <span style="font-size:16px;">All Rights Reserved.</span><br>
+              <br>
+              <span style="font-size:16px;">Kevin Chen</span><br>
+              <span style="font-size:16px;">Adnan Alam</span>
+            </div>
+          </div>
+        
+          <h2>0.2 Foreword</h2>
+          <div>
+            <p>
+              Created, designed, and written by Kevin Chen; co-written by applications 
+              developer Adnan Alam. This document is designed to accompany the K4SM Game 
+              Development Team's Cadabolg.  You can learn more about us at our 
+              <a href="../../../contact/contact.html">Contact Page</a>.
+            </p>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>1.0 Preface</h1>
+        <div class="section">
+          
+          <h2>1.1 What is the TIM?</h2>
+          <div>
+            <img style="float:left;" src="http://sourceforge.net/apps/mediawiki/italc/nfs/project/i/it/italc/7/7f/Guide.png">
+            
+            <p>
+              The TIM is abbreviated for Technical Instruction Manual. The motivation
+              for the TIM is the technical conventions and processes involved in the 
+              development process for K4SM Games.
+            </p>
+            <p>
+              The primary intended readers for this document are new hire game programmers
+              and game designers that require more intimacy with the code. It also serves
+              as a point of reference for veteran programmers and provides low level
+              coverage of system components. 
+            </p>
+            <p>
+              What will you find in the TIM? Well, as previously stated, the TIM is 
+              designed to guide newhires and designers with working with the source
+              code and prove as a reference manual for seasoned developers as well.
+              But to go into further depth, it expands on how to use designer tools,
+              its infrastructure, the way it is to be used, the way it interacts with
+              the system, the way it meshes with the designer's ideas, and much more.
+              It will also provide, coding standards and agreed upon methods of 
+              code modification in order to maintain consistency of coding.
+            </p>
+            <p>
+              This version of the TIM is K4SM's very first; for the very first project;
+              with our very first prototype for an engine; and an introductory suite of
+              designer tools. As such, this is definitely directed solely towards our
+              first project. However, in future versions, this may act as a base towards
+              writing extended documents.
+            </p>
+          </div>
+        
+          <h2>1.2 Reader Guide</h2>
+          <div>
+            <p>
+              This, the reader guide, instructs the reader on how to interpret certain
+              iconic representations intended to be interpreted in a certain way. Also,
+              it briefs readers on the naming standards for the file system that we
+              maintain in the Cadabolg project.
+            </p>
+          </div>
+            
+          <h3>1.2.2 UML</h3>
+          <div>
+            <p>
+              Most of the sections in the coming modules will have a UML associated to
+              represent the high level structure of a class, or provide an overview of
+              a module's topics. The following provides a guide for UML notation:
+              <a href="http://msdn.microsoft.com/en-us/library/dd409437.aspx" target="_blank">
+                UML Notation Guide
+              </a>.
+            </p>  
+          </div>
+          
+          <h3>1.2.3 File System</h3>
+          <div>
+            <p>
+              Throughout this document, you will see direct references to source files
+              located in the project. The file path will be presented in the following
+              format: <span class='filepath'>/game/engine/include/game_engine.h</span>.
+            </p>
+            <p>
+              In our repository, the path described here should be appended to 
+              <span class='filepath'>/trunk/projects/Cadabolg/devel/project/Cadabolg</span>
+              to retrieve the correct path. So, in its entirety, the path of the previous
+              file is: <span class='filepath'>
+              /trunk/projects/Cadabolg/devel/project/Cadabolg/game/engine/include/game_engine.h
+              </span>.
+            </p>
+            <p>
+              The conventions of the file naming follow from the file path. For example,
+              <span class='filepath'>/game/engine/include/game_engine.h</span> is named
+              <span class='filepath'>game_engine.h</span> because its path is
+              <span class='filepath'>/game/engine/</span>. Also, the first component
+              of the path indicates that we are writing in the game directory, and the
+              second tells us we are working on the engine component. Finally, we get
+              to the <span class='filepath'>include</span> component.
+            </p>
+            <p>
+              Like most C++ directory structures, we have three subdirectories within
+              each component, with the exception of the RPG Infrastructure component.
+              These three are:
+            </p>
+            <ol>
+              <li>include</li>
+              <li>lib</li>
+              <li>src</li>
+            </ol>
+            <p>
+              Include files are simply header files with <span class='filepath'>
+              *.h</span> as the file extension. These files provide function and 
+              structure declarations that are to be defined within the src files.
+            </p>
+            <p>
+              Lib files also have the extension <span class='filepath'>*.h</span> but
+              serve a different purpose. Library files contain a series of directives
+              created in a specific component to achieve a convenient component dump
+              whenever necessary.
+            </p>
+            <p>
+              Finally, src files are where definitions for include declarations are
+              located. Please follow the existing convention for procedure separators
+              to preserve consistency. These files have file extensions of format
+              <span class='filepath'>*.cpp</span>.
+            </p>
+          </div>
+
+          <h3>1.2.4 File Structure</h3>
+          <div>
+            <p>
+              As listed in <a href="#1_2_3" onclick="openModule(1)">1.2.3 File System</a>, there are three types
+              of files, those being:
+            </p>
+            <ol>
+              <li>include</li>
+              <li>lib</li>
+              <li>src</li>
+            </ol>
+            <p>
+              Each one of these files follow a very strict format to aid in organizing
+              directives and to avoid including a header file or library file multiple
+              times.
+            </p>
+          </div>
+          
+          <h4>1.2.4.1 Include Files</h4>
+          <div>
+            <p>
+              Below is the template for a typical include file with a structure
+              declaration; where component in one of {common, core, engine, inteface, 
+              resources, rpg,tools, training} and subcomponent is derived from one of
+              these components.
+            </p>
+            <pre class='brush:cpp'>
+//====================================================================================
+// File   : /game/[component]/include/game_[component]_[subcomponent].h
+// Author : [Name]                                              Copyright(c) 20xx K4SM
+//------------------------------------------------------------------------------------
+// [COMPONENT] [SUBCOMPONENT] HEADER :
+//    [Description]
+//
+//====================================================================================
+#ifndef __GAME_[COMPONENT]_[SUBCOMPONENT]_H__
+#define __GAME_[COMPONENT]_[SUBCOMPONENT]_H__
+
+[DIRECTIVES]
+
+//====================================================================================
+//                                                            [COMPONENT/SUBCOMPONENT]
+//====================================================================================
+struct [COMPONENT/SUBCOMPONENT] {
+  // Properties
+  // Declarations
+  // Constructor
+  // Destructor
+};
+
+#endif
+            </pre>
+            <p>
+              Very important to note is the header guard, ie. <span class='filepath'>
+              #ifndef __GAME_[COMPONENT]_[SUBCOMPONENT]_H__</span>. The guard must
+              always follow this format; must be in all caps, must be preceded and
+              followed by two underscores, with each word in separated by an underscore.
+              The purpose of a guard is to tell the preprocessor not to include the 
+              file if it has already been included once before at a relative location.
+              If this is not included, we stand a great chance of receiving redefinitions
+              which result in problems.
+            </p>
+          </div>
+          
+          <h4>1.2.4.2 Library Files</h4>
+          <div>
+            
+            <pre class='brush:cpp'>
+//====================================================================================
+// File   : /game/[component]/lib/game_[component]_lib.h
+// Author : [Name]                                              Copyright(c) 20xx K4SM
+//------------------------------------------------------------------------------------
+// [COMPONENT] LIBRARY :
+//    [Description]
+//
+//====================================================================================
+#ifndef __GAME_[COMPONENT]_LIB_H__
+#define __GAME_[COMPONENT]_LIB_H__
+
+[DIRECTIVES]
+
+#endif
+            </pre>
+            <p>
+              As you can see, this format is incredibly similar to our formatting for
+              the header files. Notice there are no declarations though and that the
+              file information header indicates that it is a library file.
+            </p>
+          </div>
+          
+          <h4>1.2.4.3 Source Files</h4>
+          <div>
+            <pre class='brush:cpp'>
+//====================================================================================
+// File   : /game/[component]/src/game_[component]_[subcomponent].cpp
+// Author : Kevin Chen                                         Copyright(c) 20xx K4SM
+//------------------------------------------------------------------------------------
+// [COMPONENT] [SUBCOMPONENT] SOURCE
+//
+//====================================================================================
+
+[DIRECTIVES]
+
+//====================================================================================
+//                                                                      [SUBCOMPONENT]
+//====================================================================================
+[Constructor definition]
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Member declarations]
+            </pre>
+            <p>
+              Needless to say, these files can get very large very fast with enough
+              declarations to define. We must try and keep these files as clean and well
+              documented as possible.
+            </p>
+            
+          </div>
+        
+          <h2>1.3 Structure Specification</h2>
+          <div>
+            <p>
+              The following is a unified class model, written using 
+              unified modelling language (UML), specifying the highest level overview 
+              of the project infrastructure and structure. The project is composed of 
+              the following main components:
+            </p>
+            <ul>
+              <li><a href="#6_0" onclick="openModule(6);">Application Core</a></li>
+              <li><a href="#2_0" onclick="openModule(2);">PROLIX Engine</a></li>
+              <li><a href="#3_0" onclick="openModule(3);">RPG Infrastructure</a></li>
+              <li><a href="#5_0" onclick="openModule(5);">Interface Infrastructure</a></li>
+              <li><a href="#4_0" onclick="openModule(4);">Common Infrastructure</a></li>
+              <li><a href="#7_0" onclick="openModule(7);">Designer Tools</a></li>
+            </ul>
+            <center>
+            <img width=775 src="files/uml/master.png" />
+            </center>
+            <p>
+              The design of this structure is geared towards supporting the Application
+              Core. We can categorize these each of these components into one of two
+              structures: front-end and back-end. 
+            </p>
+            <p>
+              Front-end development is composed of visible features of development
+              while back-end development are the transparent features of development.
+              So the Application Core, Interface Infrastructure, and Designer Tools
+              belong to the front-end; and the PROLIX Engine, RPG Infrastructure, and
+              Common Infrastructure belong to the back-end.
+            </p>
+          </div>
+        </div>  
+      </div>
+      
+      <div class="module">
+        <h1>2.0 <font face="Courier New" size=5>PROLIX</font> Engine</h1>
+        <div class="section">
+          
+          <h2>2.1 Overview</h2>
+            <div>
+            <p>
+              The PROLIX Engine is a custom engine developed by yours truly and takes
+              advantage of two popular graphical and interfaceable libraries:
+            </p>
+            <ol>
+              <li>Simple Direct Media Library (SDL)</li>
+              <li>Open Graphics Library (OpenGL)</li>
+            </ol>
+            <p>
+              The objective of PROLIX (occassionally abbreviated PRLX when referred to
+              in a technical context), is to build a game from the bottom up and to make
+              the engine as flexible as possible so as to make cross-platform games
+              without too many compatibility issues. 
+            </p>
+            <p>
+              By selecting SDL, we attain the bonus of cross-platform compatibility and 
+              low-level controls for media; and in addition, the opportunity to shape 
+              our future in game development.
+            </p>
+            <p>
+              OpenGL came as a late decision in the development process. Initially, we
+              planned to only use SDL to achieve all of our purposes. However, due to 
+              severe complications with simple requirements such as resizing, rotating,
+              and other forms of image transformations, we required more robust and
+              sophisticated pre-developed libraries to give us a leg-up and produce
+              a product.
+            </p>
+            <p>
+              The specification for the PROLIX structuring is detailed in the UML below:
+            </p>
+            <center>
+            <img width=750 src="files/uml/prolix.png" />
+            </center>
+          </div>
+          
+          <h2>2.2 Core Engine</h2>
+          <div>
+            <p>
+              The PRLX_ENGINE structure is the central hub for all the engine components.
+              This means that all of its components can access one another and share
+              a bidirectional relationship with the core engine. Study the structure
+              declaration attached in the figure below:
+            </p>
+            
+            <div style="height:300px;overflow:auto;">
+              <pre class='brush:cpp'>
+//====================================================================================
+// File   : /game/engine/include/game_engine.h
+// Author : Kevin Chen                                         Copyright(c) 2011 K4SM
+//------------------------------------------------------------------------------------
+// ENGINE HEADER :
+//    Will manage all engine components including the required components:
+//      - (y) GRAPHICS
+//      - (y) AUDIO
+//      - (y) FONT
+//      - (y) INPUT
+//      - (y) PHYSICS
+//      - (n) PARTICLE
+//
+//====================================================================================
+#ifndef __GAME_ENGINE_H__
+#define __GAME_ENGINE_H__
+
+#include &lt;SDL.h&gt;
+#include "../include/game_engine_input.h"
+#include "../include/game_engine_graphics.h"
+#include "../include/game_engine_logger.h"
+#include "../include/game_engine_text.h"
+#include "../include/game_engine_physics.h"
+#include "../include/game_engine_mixer.h"
+#include "../../common/include/game_common_time.h"
+
+//====================================================================================
+//                                                                         PRLX_ENGINE
+//====================================================================================
+struct PRLX_ENGINE {
+  // frame regulating variables
+  Timer fps, timer;
+
+  // engine state variables
+  bool exit;
+  bool windowed;
+  SDL_Surface *screen;
+
+  // PROLIX components
+  PRLX_LOGGER *Logger;      // OVERSEER logger
+  PRLX_GRAPHICS *Graphics;  // Graphics manager
+  PRLX_INPUT *Input;        // Keyboard/Mouse handler
+  PRLX_TEXT *Text;          // Font and text blit manager
+  PRLX_PHYSICS *Physics;    // Physics manager
+  PRLX_MIXER *Mixer;        // Audio manager
+
+  bool init ();             // intializes Engine and window properties/attributes
+  bool loop ();             // returns true if Engine is still in operation
+  bool update ();           // poll inputs, regulate frame rate and refresh window
+  void handleInput ();      // poll inputs and executes actions
+  void toggleWindow ();     // toggles between windowed and fullscreen mode
+  void closeApplication (); // terminate application
+  void shutdown ();         // safely close application and free resources
+
+  // constructor
+  PRLX_ENGINE ();
+
+  // destructor
+  ~PRLX_ENGINE ();
+};
+
+#endif
+              </pre>
+            </div>
+            
+            <p>
+              Just from a passing glance, we can see that the core engine is designed
+              to maintain the state and health of the application. This relies
+              heavily on SDL to communicate with the operation system.
+            </p>
+          </div>
+        
+          <h2>2.3 Graphics Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.4 Input Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.5 Logger Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.6 Mixer Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.7 Physics Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.8 Particle Engine</h2>
+          <div>
+          </div>
+          
+          <h2>2.9 Text Engine</h2>
+          <div>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>3.0 <font face="Courier New" size=5>RPG</font> Infrastructure</h1>
+        <div class="section">
+        
+          <h2>3.1 Overview</h2>
+          <div>
+            <p>
+              The RPG Infrastructure component develops the game mechanics specific to
+              the game that is to be implemented.
+            </p>
+            <center>
+            <img width=400 src="files/uml/rpg.png" />
+            </center>
+            <p>
+              These are the main lower-level features and mechanics of Cadabolg. These
+              features will be leveraged extensively in the Application Core and
+              requires intelligent configuration processes for the designated game
+              designer. As such, a large role of the applications developer is to
+              create designer tools directed towards harnessing configuration processes;
+              prioritizing usability, maintainability, and scalability.
+            </p>
+          </div>
+          
+          <h2>3.2 Actor</h2>
+          <div>
+          </div>
+          
+          <h3>3.2.1 Configuration</h3>
+          <div>
+          </div>
+          
+          <h2>3.3 Inventory</h2>
+          <div>
+          </div>
+          
+          <h2>3.4 Item</h2>
+          <div>
+          </div>
+          
+          <h3>3.4.1 Configuration</h3>
+          <div>
+          </div>
+          
+          <h2>3.5 Skill</h2>
+          <div>
+          </div>
+          
+          <h3>3.5.1 Configuration</h3>
+          <div>
+          </div>
+          
+          <h2>3.6 Element</h2>
+          <div>
+          </div>
+          
+          <h3>3.6.1 Configuration</h3>
+          <div>
+          </div>
+          
+          <h2>3.7 Ailment</h2>
+          <div>
+          </div>
+          
+          <h3>3.7.1 Configuration</h3>
+          <div>
+          </div>
+          
+          <h2>3.8 Attribute</h2>
+          <div>
+          </div>
+          
+          <h3>3.8.1 Configuration</h3>
+          <div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>4.0 Common Infrastructure</h1>
+        <div class="section">
+          
+          <h2>4.1 Overview</h2>
+          <div>
+            <p>
+              The common infrastructure is simply a component that contains tools and 
+              helpful functions that cannot be categorized in any specific component
+              on its own. For this reason, all high level components use this library
+              in its development as seen <a href="#1_2" onclick="openModule(1)">here</a>. 
+            </p>
+            <center>
+            <img width=750 src="files/uml/common.png" />
+            </center>
+          </div>
+          
+          <h2>4.2 Drawing</h2>
+          <div>
+          </div>
+          
+          <h2>4.3 Resources</h2>
+          <div>
+          </div>
+          
+          <h2>4.4 Texture</h2>
+          <div>
+          </div>
+          
+          <h2>4.5 Cartesian</h2>
+          <div>
+          </div>
+          
+          <h2>4.6 Time</h2>
+          <div>
+          </div>
+          
+          <h2>4.7 String</h2>
+          <div>
+          </div>
+          
+          <h2>4.8 Vector</h2>
+          <div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>5.0 Interface Infrastructure</h1>
+        <div class="section">
+          
+          <h2>5.1 Overview</h2>
+          <div>
+            <p>
+              The Interface Infrastructure is composed of elements visible on the user
+              interface (UI). This leverages both the common infrastructure and the
+              PROLIX engine and heavily impacts the application core. It serves as the
+              primary source of information transaction between the application and the user.
+            </p>
+            <center>
+            <img width=550 src="files/uml/interface.png" />
+            </center>
+            <p>
+              Attached to the interface infrastructure are a set of commonly used 
+              mechanisms that are specific to the game. Generally, this is discouraged
+              by our standards, and goes against our one-in-all mindframe, but is
+              applied to smooth the transition between the RPG component of Cadabolg
+              and the Application Core. 
+            </p>
+          </div>
+          
+          <h2>5.2 Object</h2>
+          <div>
+          </div>
+          
+          <h2>5.3 Button</h2>
+          <div>
+          </div>
+          
+          <h2>5.4 Cursor</h2>
+          <div>
+          </div>
+          
+          <h2>5.5 Sprite</h2>
+          <div>
+          </div>
+          
+          <h2>5.6 Animation</h2>
+          <div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>6.0 Application Core</h1>
+        <div class="section">
+          
+          <h2>6.1 Overview</h2>
+          <div>
+            <p>
+              The Application Core is where all the magic happens; where the game is
+              developed, and everything comes together to form our dream game. In this
+              component, we have the same UML as found in 
+              <a href="#1_2" onclick="openModule(1)">Section 1.2</a>:
+            </p>
+            <center>
+            <img width=775 src="files/uml/master.png" />
+            </center>
+            <p>
+              This component is commonly referred to as the front-end of the project
+              while all previously mentioned components, excepting designer tools, are
+              referred to as back-end since all content written here is directly
+              visible to the user. Thus, the application core serves as the sensory 
+              medium between our application components and the user. 
+            </p>
+            <p>
+              Since this area demands creativity, we strictly enforce organizational
+              habits, uniform compositional techniques, and efficient methodologies.
+              In order to achieve this, we will instate abstract data types (ADT) that
+              closely resemble timeline snapshots to achieve a modularized form of
+              event-driven programming and provide a solution to reduce organization
+              hazards, computational waste, and aid resource management.
+            </p>
+          </div>
+          
+          <h2>6.2 Application</h2>
+          <div>
+            <p>
+              One very important fact to keep in mind: the application is not the
+              direct point of entry in the program. In fact, the precise point of
+              entry in the program is found at 
+              <span class='filepath'>/game/game_driver.h</span>.
+            </p>
+            <p>
+              The reason why this is designed like this is so that we can easily select
+              what application to run, either to run the main game application or to
+              run designer tools for testing. While there may be better alternatives,
+              this is the one that places the designer closest to the code and ensures
+              compatibility assurance.
+            </p>
+          </div>
+          
+          <h2>6.3 Resource Library</h2>
+          <div>
+            <p>
+              The resource library is the central hub for organizing the main application's
+              media files (.mp3, .wav, .png, etc.). Note that we should not pollute
+              the main application's resource library with unnecessary files.
+            </p>
+            <p>
+              As described in <a href="#6_1">6.1 Overview</a>, the application core
+              is to be modularized in order to simulate story events. This way, we can
+              avoid loading media files that are not going to be used in the module.
+              Also, the resource libraries become inherently more organized, which is
+              always a plus.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>7.0 Designer Tools</h1>
+        <div class="section">
+          
+          <h2>7.1 Overview</h2>
+          <div>
+            <p>
+              Designer Tools as mentioned in <a href="3_0" onclick="openModule(3)">
+              3.0 RPG Infrastructure</a> is a means to aid the designer in developing in a less
+              tech-savvy manner and providing a translator to turn his/her vision into 
+              functional code. Tools are established as valid upon demand.
+            </p>
+            <p>
+              In terms of quality, we value the tool's ability to provide a consistent
+              result, reject inadequate input, clear navigation, and focussed functionality.
+            </p>
+            <p>
+              There are several very important factors to be considered before we even
+              begin thinking of creating the tool: 
+            </p>
+            <ul>
+              <li>Functional Integrity</li>
+              <li>Level of Demand</li>
+              <li>Feasibility</li>
+              <li>Complexity of Development</li>
+              <li>Cost of Development</li>
+              <li>Compatibility Assurance</li>
+            </ul>
+            <p>
+              If we intend to create a tool, we must first ensure that the tool will
+              serve a practical purpose before we sink in the manpower to develop it.
+              To this end, we must be certain of a tool's <u>functional integrity</u> and
+              ensure that there are relevent applications to the project.
+            </p>
+            <p>
+              As an obvious rule of thumb, we should not accept a tool to be considered for
+              production if there is no demand for it. If it is the case that it
+              will not be used, there is no functional integrity and should not be developed.
+            </p>
+            <p>
+              We should also gauge the feasibility of creating the tool. If the tool
+              cannot be created using conventional methods, or requires far too many
+              resources or manpower to develop, then it should be deemed not worthwhile
+              for development. This is synonymous with <u>complexity of development</u>
+              and <u>cost of development</u>. The feasibility of a tool's production
+              is parallel to the level of demand for its functionality.
+            </p>
+            <p>
+              A valuable nugget of knowledge and reassuring thought for the designer
+              is to know that their information is being interpreted correctly even
+              after being fed to the program. As such, it is strongly recommended,
+              though not required, for the tool to pass through the project source
+              code, at a relevent entry point, to provide this assurance. Also, this
+              allows the source code itself to receive testing given arbitrary input
+              for a specific component.
+            </p>
+          </div>
+          
+          <h2>7.2 Node Configuration</h2>
+          <div>
+          </div>
+          
+          <h2>7.3 Choreographer</h2>
+          <div>
+          </div>
+          
+          <h2>7.4 Tilemap Editor</h2>
+          <div>
+          </div>
+          
+          <h2>7.5 Node Previewer</h2>
+          <div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="module">
+        <h1>8.0 Glossary</h1>
+        <div class="section" id="glossary">
+          
+          <script type="text/javascript">
+            $(document).ready (function () {
+              $.getJSON ("glossary.json",
+              function (data) {
+                var obj = data.Glossary;
+                insertGlossaryItems (obj);
+              });
+            });
+          </script>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="footer"></div>
+  
+  </div>
+  </body>
+</html>
